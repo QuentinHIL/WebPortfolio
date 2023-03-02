@@ -1,0 +1,67 @@
+#hero{
+    background: rgb(2,128,144);
+    background: linear-gradient(130deg, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 53%, rgba(158,206,154,1) 100%);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    header{
+        @include marge90;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        a{
+            img{
+                width: 10rem;
+                height: auto;
+            }
+        }
+        #nav{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                list-style: none;
+                padding: 0;
+                a{
+                    @include police300;
+                    text-decoration: none;
+                    color: $sec;
+                }
+            }
+        }
+    }
+    #presentation{
+        @include marge90;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        #textepresentation{
+            width:60%;
+            text-shadow: #000 1px 0 10px; ;
+            h1{
+                @include police500;
+                font-size: 2rem;
+                color: $sec;
+            }
+            p{
+                width:60%;
+                @include police300;
+                color: $sec;
+                text-justify: auto;
+                text-align: justify;
+            }
+        }
+        #photopresentation{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            #photo{
+                max-width:60%;
+                height: auto;
+            }
+        }    
+    }
+}

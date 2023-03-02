@@ -1,0 +1,96 @@
+#apropos{
+    @include espacevertical;
+    #monparcours{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2rem;
+        h2{
+            @include police500;
+            color: $prim;
+            font-size: 2rem;
+        }
+        p{
+            @include marge80;
+            @include police300;
+            font-size: 1rem;
+        }
+    }
+    #messavoirs{
+        @include espacevertical;
+        h2{
+            @include police500;
+            color: $prim;
+            font-size: 2rem;
+            text-align: center; 
+        }
+        .boutons{
+            @include marge80;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            .competence{
+                width: 25%;
+                background-color: transparent;
+                font-size: 1.5rem;
+                border-radius: 0.25rem;
+                border-style: none dotted;
+                border-width: 2px;
+            }
+            .competence:hover{
+                @include animfade;
+                cursor: pointer;
+                background: linear-gradient(-90deg,#ffffff,$prim, #ffffff);
+	            background-size: 600% 600%;
+	            animation: gradient 5s ease infinite;
+            }
+        }
+        #contcartes{
+            .cartes{
+                display: none;
+                .contenu{
+                    h3{
+                        @include police300;
+                        font-size: 1.25rem;
+                        color: $prim;
+                        text-align: center;
+                    }
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-between;
+                        li{
+                            @include police300;
+                            font-size: 2rem;
+                            width: fit-content;
+                            border-radius: 0.2rem;
+                            text-align: center;
+                            background-color: $sectransparent;
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+            #dev{
+                @include marge60;
+            }
+            #maquette{
+                @include marge80;
+            }
+            #humain{
+                @include marge80;
+            }
+            .show{
+                @include animin;
+                display: block;
+            }
+        }
+    }
+    hr{
+        @include marge80;
+        height: 5px;
+        border-style: none;
+        background-color: $prim;
+    }
+}

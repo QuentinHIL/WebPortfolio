@@ -1,0 +1,135 @@
+@mixin marge90{
+    width: 90%;
+    margin: auto;
+}
+@mixin marge80{
+    width: 80%;
+    margin: auto;
+}
+@mixin marge70{
+    width: 70%;
+    margin: auto;
+}
+@mixin marge60{
+    width: 60%;
+    margin: auto;
+}
+@mixin police300{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+@mixin police500{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+@mixin animfade{
+    @keyframes gradient {
+        0% {
+            background-position: 0% 75%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 75%;
+        }
+    }
+}
+@mixin animin{
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    @-webkit-keyframes tracking-in-expand-fwd {
+        0% {
+          letter-spacing: -0.5em;
+          -webkit-transform: translateZ(-700px);
+                  transform: translateZ(-700px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-expand-fwd {
+        0% {
+          letter-spacing: -0.5em;
+          -webkit-transform: translateZ(-700px);
+                  transform: translateZ(-700px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }   
+}
+@mixin espacevertical{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+@mixin glissegauche{
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          @-webkit-keyframes slide-in-left {
+            0% {
+              -webkit-transform: translateX(-1000px);
+                      transform: translateX(-1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          @keyframes slide-in-left {
+            0% {
+              -webkit-transform: translateX(-1000px);
+                      transform: translateX(-1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+
+}
+@mixin glissedroite{
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          @-webkit-keyframes slide-in-right {
+            0% {
+              -webkit-transform: translateX(1000px);
+                      transform: translateX(1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          @keyframes slide-in-right {
+            0% {
+              -webkit-transform: translateX(1000px);
+                      transform: translateX(1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+}
+

@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+#hero {
+  background: rgb(2, 128, 144);
+  background: linear-gradient(130deg, rgb(2, 128, 144) 0%, rgb(2, 128, 144) 53%, rgb(158, 206, 154) 100%);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+#hero header {
+  width: 90%;
+  margin: auto;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+#hero header a img {
+  width: 10rem;
+  height: auto;
+}
+#hero header #nav {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero header #nav li {
+  list-style: none;
+  padding: 0;
+}
+#hero header #nav li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: #9ece9a;
+}
+#hero #presentation {
+  width: 90%;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+#hero #presentation #textepresentation {
+  width: 60%;
+  text-shadow: #000 1px 0 10px;
+}
+#hero #presentation #textepresentation h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #9ece9a;
+}
+#hero #presentation #textepresentation p {
+  width: 60%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #9ece9a;
+  text-justify: auto;
+  text-align: justify;
+}
+#hero #presentation #photopresentation {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+#hero #presentation #photopresentation #photo {
+  max-width: 60%;
+  height: auto;
+}
+
+#apropos {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#apropos #monparcours {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#apropos #monparcours h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #028090;
+  font-size: 2rem;
+}
+#apropos #monparcours p {
+  width: 80%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+#apropos #messavoirs {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#apropos #messavoirs h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #028090;
+  font-size: 2rem;
+  text-align: center;
+}
+#apropos #messavoirs .boutons {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#apropos #messavoirs .boutons .competence {
+  width: 25%;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  border-style: none dotted;
+  border-width: 2px;
+}
+#apropos #messavoirs .boutons .competence:hover {
+  cursor: pointer;
+  background: linear-gradient(-90deg, #ffffff, #028090, #ffffff);
+  background-size: 600% 600%;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 75%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 75%;
+  }
+}
+#apropos #messavoirs #contcartes .cartes {
+  display: none;
+}
+#apropos #messavoirs #contcartes .cartes .contenu h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: #028090;
+  text-align: center;
+}
+#apropos #messavoirs #contcartes .cartes .contenu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#apropos #messavoirs #contcartes .cartes .contenu ul li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.2rem;
+  text-align: center;
+  background-color: rgba(158, 206, 154, 0.5);
+  margin-top: 1rem;
+}
+#apropos #messavoirs #contcartes #dev {
+  width: 60%;
+  margin: auto;
+}
+#apropos #messavoirs #contcartes #maquette {
+  width: 80%;
+  margin: auto;
+}
+#apropos #messavoirs #contcartes #humain {
+  width: 80%;
+  margin: auto;
+}
+#apropos #messavoirs #contcartes .show {
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  display: block;
+}
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+#apropos hr {
+  width: 80%;
+  margin: auto;
+  height: 5px;
+  border-style: none;
+  background-color: #028090;
+}
+
+#projets {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#projets h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #028090;
+  text-align: center;
+}
+#projets p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+#projets #contprojets {
+  display: flex;
+  flex-direction: column;
+}
+#projets #contprojets .projet {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+#projets #contprojets .projet img {
+  border-radius: 0.25rem;
+  width: 40rem;
+  height: auto;
+  box-shadow: 5px 5px 10px;
+}
+#projets #contprojets .projet .presentationprojet {
+  width: 50%;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+}
+#projets #contprojets .projet .presentationprojet h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  background-color: rgba(158, 206, 154, 0.5);
+  color: #028090;
+  align-self: center;
+}
+#projets #contprojets .projet .presentationprojet p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+#projets #contprojets .projet .presentationprojet button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  align-self: center;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  border-style: none dotted;
+  border-width: 2px;
+}
+#projets #contprojets .projet .presentationprojet button:hover {
+  cursor: pointer;
+  background: linear-gradient(-90deg, #ffffff, #028090, #ffffff);
+  background-size: 600% 600%;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 75%;
+  }
+}
+#projets #contprojets .entreegauche {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#projets #contprojets .projetinv {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+#projets #contprojets .projetinv img {
+  border-radius: 0.25rem;
+  width: 40rem;
+  height: auto;
+  box-shadow: 5px 5px 10px;
+}
+#projets #contprojets .projetinv .presentationprojet {
+  width: 50%;
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+}
+#projets #contprojets .projetinv .presentationprojet h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  background-color: rgba(158, 206, 154, 0.5);
+  color: #028090;
+  align-self: center;
+}
+#projets #contprojets .projetinv .presentationprojet p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+#projets #contprojets .projetinv .presentationprojet button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  align-self: center;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  border-style: none dotted;
+  border-width: 2px;
+}
+#projets #contprojets .projetinv .presentationprojet button:hover {
+  cursor: pointer;
+  background: linear-gradient(-90deg, #ffffff, #028090, #ffffff);
+  background-size: 600% 600%;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 75%;
+  }
+}
+#projets #contprojets .entreedroite {
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#projets hr {
+  width: 80%;
+  margin: auto;
+  height: 5px;
+  border-style: none;
+  background-color: #028090;
+}
+
+#contact h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #028090;
+  text-align: center;
+}
+#contact form {
+  width: 80%;
+  margin: auto;
+}
+#contact form #genre {
+  width: 70%;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#contact form #genre .radiobouton {
+  width: 20px;
+  height: 20px;
+}
+#contact form #genre .radiobouton :checked {
+  background-color: #028090 !important;
+}
+#contact form #genre .textebouton {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+#contact form #identite {
+  width: 80%;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#contact form #identite .entreeidentite {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  width: 25%;
+}
+#contact form #message {
+  width: 70%;
+  margin: auto;
+}
+#contact form #message #textemessage {
+  resize: none;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+#contact form #boutoncontact {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+#contact form #boutoncontact button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  border-style: none dotted;
+  border-width: 2px;
+}
+#contact form #boutoncontact button:hover {
+  cursor: pointer;
+  background: linear-gradient(-90deg, #ffffff, #028090, #ffffff);
+  background-size: 600% 600%;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 75%;
+  }
+}
+
+body {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

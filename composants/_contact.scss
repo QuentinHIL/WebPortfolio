@@ -1,0 +1,72 @@
+#contact{
+    h2{
+        @include police500;
+        font-size: 2rem;
+        color: $prim;
+        text-align: center;
+    }
+    form{
+        @include marge80;
+        #genre{
+            @include marge70;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .radiobouton{
+                width: 20px;
+                height: 20px;
+                :checked{
+                    background-color: $prim !important;
+                }
+            }
+            .textebouton{
+                @include police300;
+                font-size: 1.5rem;
+            } 
+        }
+        #identite{
+            @include marge80;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .entreeidentite{
+                @include police300;
+                width: 25%;
+            }
+        }
+        #message{   
+            @include marge70; 
+            #textemessage{
+                resize: none;
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+                width: 100%;
+                @include police300;
+            }
+        }
+        #boutoncontact{
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            button{
+                @include police300;
+                background-color: transparent;
+                border-radius: 0.25rem;
+                border-style: none dotted;
+                border-width: 2px;
+            }
+            button:hover{
+                @include animfade;
+                cursor: pointer;
+                background: linear-gradient(-90deg,#ffffff,$prim, #ffffff);
+                background-size: 600% 600%;
+                animation: gradient 5s ease infinite;
+            }
+        }
+    }
+}

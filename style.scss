@@ -1,0 +1,11 @@
+@import 'composants/variables';
+@import 'composants/mixins';
+@import 'composants/hero';
+@import 'composants/apropos';
+@import 'composants/projets';
+@import 'composants/contact';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body{
+    margin: 0;
+}

@@ -1,0 +1,118 @@
+#projets{
+    @include espacevertical;
+    h2{
+        @include police500;
+        font-size: 2rem;
+        color: $prim;
+        text-align: center;
+    }
+    p{
+        @include police300;
+        @include marge70;
+        text-align: center;
+    }
+    #contprojets{
+        display: flex;
+        flex-direction: column;
+        .projet{
+            @include marge80;
+            @include espacevertical;
+            display: flex;
+            justify-content: space-between;
+            img{
+                border-radius: 0.25rem;
+                width: 40rem;
+                height: auto;
+                box-shadow: 5px 5px 10px;
+            }
+            .presentationprojet{
+                width: 50%;
+                align-items: start;
+                display: flex;
+                flex-direction: column;
+                h3{
+                    @include police300;
+                    background-color: $sectransparent;
+                    color: $prim;
+                    align-self: center;
+                }
+                p{
+                    @include police300;
+                    text-align: center;
+                }
+                button{
+                    @include police300;
+                    align-self: center;
+                    background-color: transparent;
+                    border-radius: 0.25rem;
+                    border-style: none dotted;
+                    border-width: 2px;
+                }
+                button:hover{
+                    @include animfade;
+                    cursor: pointer;
+                    background: linear-gradient(-90deg,#ffffff,$prim, #ffffff);
+                    background-size: 600% 600%;
+                    animation: gradient 5s ease infinite;
+                }
+            }
+        }
+        .entreegauche{
+            @include glissegauche;
+        }
+        .projetinv{
+            @include marge80;
+            @include espacevertical;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            img{
+                border-radius: 0.25rem;
+                width: 40rem;
+                height: auto;
+                box-shadow: 5px 5px 10px;
+            }
+            .presentationprojet{
+                width: 50%;
+                align-items: end;
+                display: flex;
+                flex-direction: column;
+                h3{
+                    @include police300;
+                    background-color: $sectransparent;
+                    color: $prim;
+                    align-self: center;
+                }
+                p{
+                    @include police300;
+                    text-align: center;
+                }
+                button{
+                    @include police300;
+                    align-self: center;
+                    background-color: transparent;
+                    border-radius: 0.25rem;
+                    border-style: none dotted;
+                    border-width: 2px;
+                }
+                button:hover{
+                    @include animfade;
+                    cursor: pointer;
+                    background: linear-gradient(-90deg,#ffffff,$prim, #ffffff);
+                    background-size: 600% 600%;
+                    animation: gradient 5s ease infinite;
+                }
+                
+            }
+        }
+        .entreedroite{
+            @include glissedroite;
+        }
+    }
+    hr{
+        @include marge80;
+        height: 5px;
+        border-style: none;
+        background-color: $prim;
+    }
+}
