@@ -4,7 +4,13 @@
 @import 'composants/apropos';
 @import 'composants/projets';
 @import 'composants/contact';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import 'composants/footer';
+//import des deux premières polices
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+//import d'autres polices
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Varela+Round&display=swap');
+//import de la bibliothèque fontawesome
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
 body{
     margin: 0;

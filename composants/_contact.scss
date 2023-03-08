@@ -39,7 +39,9 @@
             }
         }
         #message{   
-            @include marge70; 
+            @include marge70;
+            padding-top: 1rem;
+            padding-bottom: 2rem; 
             #textemessage{
                 resize: none;
                 padding-top: 1rem;
@@ -52,13 +54,14 @@
             display: flex;
             justify-content: center;
             padding-top: 1rem;
-            padding-bottom: 2rem;
+            padding-bottom: 4rem;
             button{
                 @include police300;
                 background-color: transparent;
                 border-radius: 0.25rem;
                 border-style: none dotted;
                 border-width: 2px;
+                font-size: 1.5rem;
             }
             button:hover{
                 @include animfade;

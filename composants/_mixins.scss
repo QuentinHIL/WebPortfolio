@@ -14,13 +14,12 @@
     width: 60%;
     margin: auto;
 }
-@mixin police300{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+@mixin titre{
+    font-family: 'Rampart One', cursive;
+    color: $text;
 }
-@mixin police500{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+@mixin texte{
+    font-family: 'Varela Round', sans-serif;
 }
 @mixin animfade{
     @keyframes gradient {

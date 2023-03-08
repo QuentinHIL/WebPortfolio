@@ -1,6 +1,7 @@
 #hero{
-    background: rgb(2,128,144);
-    background: linear-gradient(130deg, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 53%, rgba(158,206,154,1) 100%);
+    // background: rgb(2,128,144);
+    // background: linear-gradient(130deg, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 53%, rgba(158,206,154,1) 100%);
+    background-image: url('images/blueback.jpg');
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -25,9 +26,9 @@
                 list-style: none;
                 padding: 0;
                 a{
-                    @include police300;
+                    @include titre;
                     text-decoration: none;
-                    color: $sec;
+                    color: $text;
                 }
             }
         }
@@ -40,15 +41,15 @@
         align-items: center;
         #textepresentation{
             width:60%;
-            text-shadow: #000 1px 0 10px; ;
+            text-shadow: #000 1px 0 10px;
             h1{
-                @include police500;
+                @include titre;
                 font-size: 2rem;
-                color: $sec;
+                color: $text;
             }
             p{
-                width:60%;
-                @include police300;
+                width:100%;
+                @include texte;
                 color: $sec;
                 text-justify: auto;
                 text-align: justify;
@@ -57,7 +58,7 @@
         #photopresentation{
             width: 40%;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             #photo{
                 max-width:60%;
                 height: auto;
