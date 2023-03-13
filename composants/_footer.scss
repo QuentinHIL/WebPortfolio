@@ -48,6 +48,10 @@ footer{
                     display: flex;
                     justify-content: center;
                     a{
+                        &:hover{
+                            @include pulse;
+                            cursor: pointer;
+                        }
                         i{
                             font-size: 5rem;
                             color: $text;

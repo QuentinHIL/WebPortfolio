@@ -8,12 +8,12 @@
     form{
         @include marge80;
         #genre{
-            @include marge70;
+            @include marge80;
             padding-top: 2rem;
             padding-bottom: 2rem;
             display:flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             .radiobouton{
                 width: 20px;
                 height: 20px;
@@ -32,14 +32,14 @@
             padding-bottom: 2rem;
             display:flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             .entreeidentite{
                 @include texte;
                 width: 25%;
             }
         }
         #message{   
-            @include marge70;
+            @include marge80;
             padding-top: 1rem;
             padding-bottom: 2rem; 
             #textemessage{

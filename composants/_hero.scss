@@ -64,6 +64,10 @@
                 @include texte;
                 color: $text;
                 text-align: center;
+                a{
+                    text-decoration: none;
+                    color: $text;
+                }
             }
         }
         #photopresentation{
