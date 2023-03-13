@@ -1,7 +1,7 @@
 #contact{
     h2{
-        @include police500;
-        font-size: 2rem;
+        @include titre;
+        font-size: 2.5rem;
         color: $prim;
         text-align: center;
     }
@@ -22,7 +22,7 @@
                 }
             }
             .textebouton{
-                @include police300;
+                @include texte;
                 font-size: 1.5rem;
             } 
         }
@@ -34,7 +34,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
             .entreeidentite{
-                @include police300;
+                @include texte;
                 width: 25%;
             }
         }
@@ -47,7 +47,7 @@
                 padding-top: 1rem;
                 padding-bottom: 2rem;
                 width: 100%;
-                @include police300;
+                @include texte;
             }
         }
         #boutoncontact{
@@ -56,19 +56,14 @@
             padding-top: 1rem;
             padding-bottom: 4rem;
             button{
-                @include police300;
-                background-color: transparent;
-                border-radius: 0.25rem;
-                border-style: none dotted;
-                border-width: 2px;
+                @include stylebouton;
+                @include texte;
+                height: 5rem;
                 font-size: 1.5rem;
             }
             button:hover{
-                @include animfade;
                 cursor: pointer;
-                background: linear-gradient(-90deg,#ffffff,$prim, #ffffff);
-                background-size: 600% 600%;
-                animation: gradient 5s ease infinite;
+                @include pulse;
             }
         }
     }

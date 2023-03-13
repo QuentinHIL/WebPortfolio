@@ -10,178 +10,205 @@
 </head>
 <body>
     <section id="hero">
-        <header>
-            <a id="logo" href="index.html"><img src="images/QH.png" alt="Logo Quentin HILLAIRET Développement"></a>
-            <ul id="nav">
-                <li><a href="#hero">Accueil</a></li>
-                <li><a href="#apropos">A propos</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </header>
-        <div id="presentation">
-            <div id="textepresentation">
-                <h1>Bonjour. Je m'appelle Quentin HILLAIRET.</h1>
-                <p>Fraîchement diplômé en développement web Front-End, j'ai travaillé sur différents projets durant ma formation dans lesquels j'ai mis en oeuvre mes compétences en terme d'intégration et de design UX/UI.</p>
+            <header>
+                <a id="logo" href="index.html"><img src="images/QH.png" alt="Logo Quentin HILLAIRET Développement"></a>
+                <ul id="nav">
+                    <li><a href="#apropos">A propos</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </header>
+            <div id="presentation">
+                <div id="textepresentation">
+                    <h1>Bonjour. Je m'appelle Quentin HILLAIRET.</h1>
+                    <p>Bonjour, et bienvenu(es) sur mon portfolio. Fraîchement diplômé en développement web Front-End, j’ai réalisé ce site web pour vous faire découvrir mes compétences et mon univers. Sentez-vous libre de me faire un “retour” (balise vers la section #contact) sur votre ressenti vis-à-vis de mon travail.</p>
+                </div>
+                <div id="photopresentation">
+                    <a target="_blank" href="https://www.linkedin.com/in/quentin-hillairet/">
+                        <img id="photo" src="images/quentindeux.png" alt="Photo de Quentin HILLAIRET">
+                    </a>
+                </div>
             </div>
-            <div id="photopresentation">
-                <img id="photo" src="images/quentindeux.png" alt="Photo de Quentin HILLAIRET">
-            </div>
-        </div>
     </section>
     <section id="apropos">
-        <div id="monparcours">
-            <h2>Cursus</h2>
-            <p>Mon cursus scolaire est plutôt hétérogène. J'ai commencé l'histoire de l'art pour me diriger ensuite vers les technologies industrielles, et pour finir j'ai étudier les technologies liées au son. Tout ça pour ...</p>
-        </div>
-        <div id="messavoirs">
-            <h2>Compétences</h2>
-            <div id="contboutons">
-                <div class="boutons">
-                    <button data-id="dev" class="competence">Développement Web Front-End</button>
-                    <button data-id="maquette" class="competence">Maquettage/ UI Design</button>
-                    <button data-id="humain" class="competence">Valeurs humaines</button>
+        <h2>A Propos</h2>
+            <div id="monparcours">
+                <div id="qsj">
+                    <h3>Quelques mots me concernant</h3>
+                    <p>Âgé de 26 ans et originaire de Vendée (Pays-de-la-Loire, France), j’ai suivi un cursus d’études supérieures dans le domaine de l’informatique industrielle (DUT GEII) puis dans le domaine des technologies du son (Licence professionnelle NTS). Les postes que j’ai occupés suite à mes études ne correspondant pas à mes objectifs et à mes attentes, j’ai pris la décision d’entamer une reconversion professionnelle en ayant comme objectif de devenir <a href="#messavoirs"><em>développeur web</em></a>. Actuellement diplômé d’un titre de développeur web Front-End, je recherche activement une entreprise pour obtenir une première expérience professionnelle.</p>
+                    <button onclick="window.open('docs/CVQH.pdf', '_blank')">Étudiez mon CV</button>
+                </div>
+                <div id="cursus">
+                    <h3>Cursus</h3>
+                    <ul>
+                        <li>
+                            DUT GEII – 2015-2017 
+                        </li>
+                        <li>
+                            Licence pro NTS – 2017-2018
+                        </li>
+                        <li>
+                            CCP1 Dev Web FE – 2022-2023 
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div id="contcartes">
-                <div class="cartes" id="dev">
-                    <article class="contenu">
-                        <h3>Développement web Front End</h3>
-                        <ul>
-                           <li>HTML</li>
-                           <li>CSS</li>
-                           <li>SASS</li>
-                           <li>JS</li>
-                           <li>PHP</li>
-                           <li>WP</li>
-                           <li>RESPONSIVE</li> 
-                        </ul>
-                    </article>
+            <div id="messavoirs">
+                <h3>Compétences</h3>
+                <div id="contboutons">
+                    <div class="boutons">
+                        <button data-id="dev" class="competence">Développement Web Front-End</button>
+                        <button data-id="maquette" class="competence">Maquettage/ UI Design</button>
+                        <button data-id="humain" class="competence">Valeurs humaines</button>
+                    </div>
                 </div>
-                <div class="cartes" id="maquette">
-                    <article class="contenu" id="design">
-                        <h3>Maquettage/Design UX UI</h3>
-                        <ul>
-                            <li>FIGMA</li>
-                            <li>WIREFRAMES</li>
-                            <li>MAQUETTES</li>
-                            <li>MOODBOARD</li>
-                            <li>MOCKUPS</li>
-                        </ul>
-                    </article>
-                </div>
-                <div class="cartes" id="humain">
-                    <article class="contenu">
-                        <h3>Valeurs humaines</h3>
-                        <ul>
-                            <li>DYNAMISME</li>
-                            <li>ALTRUISME</li>
-                            <li>AUTONOMIE</li>
-                            <li>ADAPTABILITÉ</li>
-                            <li>SOCIABILITÉ</li>
-                        </ul>
-                    </article>
+                <div id="contcartes">
+                    <div class="cartes" id="dev">
+                        <article class="contenu">
+                            <h3>Développement web Front End</h3>
+                            <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SASS</li>
+                            <li>JS</li>
+                            <li>PHP</li>
+                            <li>WP</li>
+                            <li>RESPONSIVE</li> 
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="cartes" id="maquette">
+                        <article class="contenu" id="design">
+                            <h3>Maquettage/Design UX UI</h3>
+                            <ul>
+                                <li>FIGMA</li>
+                                <li>WIREFRAMES</li>
+                                <li>MAQUETTES</li>
+                                <li>MOODBOARD</li>
+                                <li>MOCKUPS</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="cartes" id="humain">
+                        <article class="contenu">
+                            <h3>Valeurs humaines</h3>
+                            <ul>
+                                <li>DYNAMISME</li>
+                                <li>ALTRUISME</li>
+                                <li>AUTONOMIE</li>
+                                <li>ADAPTABILITÉ</li>
+                                <li>SOCIABILITÉ</li>
+                            </ul>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr noshade>
+            <hr noshade>
     </section>
     <section id="projets">
-        <h2>Projets</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis alias a voluptatum. Totam pariatur praesentium, sapiente quisquam eos modi, quo dolorem, in voluptate incidunt et ut nihil est vitae consequatur.</p>
-        <div id="contprojets">
-            <div id="contprojun">
-                <div class="projet" id="projetun">
-                    <img src="images/dddmockup.png" alt="mockup du site dealeuse de délices">
-                    <div class="presentationprojet">
-                        <h3>Dealeuse de délices</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe nihil architecto non officia magni illum adipisci tenetur vel commodi similique? Dolor cum mollitia nemo debitis quae sapiente adipisci ipsum.</p>
-                        <button onclick="window.open('https://canada-quentin-test.fr/ddd/', '_blank').focus();">Le site</button>
+            <h2>Projets</h2>
+            <p>Vous trouverez ici des projets réalisés dans le cadre de ma formation ou des projets personnels. Vous pourrez découvrir d’autres réalisations en parcourant mon <a target="_blank" href="https://github.com/QuentinHIL"><em>GitHub</em></a>. J’ai hâte de pouvoir vous partager mes futurs projets. Stay tuned !</p>
+            <div id="contprojets">
+                <div id="contprojun">
+                    <div class="projet" id="projetun">
+                        <a target="_blank" href="https://canada-quentin-test.fr/ddd/">
+                            <img src="images/dddmockup.png" alt="mockup du site dealeuse de délices">
+                        </a>
+                        <div class="presentationprojet">
+                            <h3>Dealeuse de délices</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe nihil architecto non officia magni illum adipisci tenetur vel commodi similique? Dolor cum mollitia nemo debitis quae sapiente adipisci ipsum.</p>
+                            <button onclick="window.open('https://canada-quentin-test.fr/ddd/', '_blank').focus();">Le site</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="contprojdeux">
+                    <div class="projetinv" id="projetdeux">
+                        <a target="_blank" href="https://github.com/QuentinHIL/Test_Alivio">
+                            <img src="images/aliviomockup.png" alt="mockup du site alivio">
+                        </a>
+                        <div class="presentationprojet">
+                            <h3>Alivio</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloribus laboriosam blanditiis reiciendis ullam architecto velit asperiores, voluptatibus voluptates impedit laudantium molestiae eligendi. Veritatis dolorem porro vitae nihil ullam ipsa!</p>
+                            <button onclick="window.open('https://github.com/QuentinHIL/Test_Alivio', '_blank').focus();">Lien vers GitHub</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="contprojtrois">
+                    <div class="projet" id="projettrois">
+                        <a target="_blank" href="https://canada-quentin-test.fr/canada/">
+                            <img src="images/canada.png" alt="mockup du site canada">
+                        </a>
+                        <div class="presentationprojet">
+                            <h3>Canada</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit eum aspernatur aperiam voluptatibus praesentium, unde quidem. Nemo ipsam excepturi temporibus distinctio deserunt dolor quae corporis aliquid. Magnam, itaque qui.</p>
+                            <button onclick="window.open('https://canada-quentin-test.fr/canada/', '_blank').focus();">Le site</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="contprojquatre">
+                    <div class="projetinv" id="projetquatre">
+                        <a target="_blank" href="https://github.com/QuentinHIL/Test_Bootstrap">
+                            <img src="images/bootstrapmockup.png" alt="mockup d'un site fictif brandname">
+                        </a>
+                        <div class="presentationprojet">
+                            <h3>BrandName</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet enim incidunt, ratione veniam quae dicta tempore magnam a quod labore culpa, quisquam, fugiat repudiandae vel quam. Eveniet, quos voluptatibus?</p>
+                            <button onclick="window.open('https://github.com/QuentinHIL/Test_Bootstrap', '_blank').focus();">Lien vers GitHub</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="contprojdeux">
-                <div class="projetinv" id="projetdeux">
-                    <img src="images/aliviomockup.png" alt="mockup du site alivio">
-                    <div class="presentationprojet">
-                        <h3>Alivio</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam doloribus laboriosam blanditiis reiciendis ullam architecto velit asperiores, voluptatibus voluptates impedit laudantium molestiae eligendi. Veritatis dolorem porro vitae nihil ullam ipsa!</p>
-                        <button onclick="window.open('https://github.com/QuentinHIL/Test_Alivio', '_blank').focus();">Lien vers GitHub</button>
-                    </div>
-                </div>
-            </div>
-            <div id="contprojtrois">
-                <div class="projet" id="projettrois">
-                    <img src="images/ninjamailmockup.png" alt="mockup du site ninjamail">
-                    <div class="presentationprojet">
-                        <h3>NinjaMail</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit eum aspernatur aperiam voluptatibus praesentium, unde quidem. Nemo ipsam excepturi temporibus distinctio deserunt dolor quae corporis aliquid. Magnam, itaque qui.</p>
-                        <button onclick="window.open('https://github.com/QuentinHIL/TP_Final', '_blank').focus();">Lien vers GitHub</button>
-                    </div>
-                </div>
-            </div>
-            <div id="contprojquatre">
-                <div class="projetinv" id="projetquatre">
-                    <img src="images/bootstrapmockup.png" alt="mockup d'un site fictif brandname">
-                    <div class="presentationprojet">
-                        <h3>BrandName</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet enim incidunt, ratione veniam quae dicta tempore magnam a quod labore culpa, quisquam, fugiat repudiandae vel quam. Eveniet, quos voluptatibus?</p>
-                        <button onclick="window.open('https://github.com/QuentinHIL/Test_Bootstrap', '_blank').focus();">Lien vers GitHub</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr noshade>
+            <hr noshade>
     </section>
     <section id="contact">
-        <h2>Contact</h2>
-        <form id="formcontact" action="mailto:hillairetq@gmail.com" method="post" enctype="text/plain">
-            <div id="genre">
-                <div>
-                    <input class="radiobouton" name="choixgenre" id="monsieur" type="radio">
-                    <label class="textebouton" for="monsieur">Mr</label>
+            <h2>Contact</h2>
+            <form id="formcontact" action="mailto:hillairetq@gmail.com" method="post" enctype="text/plain">
+                <div id="genre">
+                    <div>
+                        <input class="radiobouton" name="choixgenre" id="monsieur" type="radio">
+                        <label class="textebouton" for="monsieur">Mr</label>
+                    </div>
+                    <div>
+                        <input class="radiobouton" name="choixgenre" id="madame" type="radio">
+                        <label class="textebouton" for="madame">Mme/Mlle</label>
+                    </div>
+                    <div>
+                        <input class="radiobouton" name="choixgenre" id="nongenre" type="radio">
+                        <label class="textebouton" for="nongenre">X</label>
+                    </div>
                 </div>
-                <div>
-                    <input class="radiobouton" name="choixgenre" id="madame" type="radio">
-                    <label class="textebouton" for="madame">Mme/Mlle</label>
+                <div id="identite">
+                    <input class="entreeidentite" type="text" name="nom" placeholder="Votre nom">
+                    <input class="entreeidentite" type="text" name="prenom" placeholder="Votre prénom">
+                    <input class="entreeidentite" type="email" name="email" placeholder="Votre email">
                 </div>
-                <div>
-                    <input class="radiobouton" name="choixgenre" id="nongenre" type="radio">
-                    <label class="textebouton" for="nongenre">X</label>
+                <div id="message">
+                    <textarea id="textemessage" form="formcontact" placeholder="Votre message"></textarea>
                 </div>
-            </div>
-            <div id="identite">
-                <input class="entreeidentite" type="text" name="nom" placeholder="Votre nom">
-                <input class="entreeidentite" type="text" name="prenom" placeholder="Votre prénom">
-                <input class="entreeidentite" type="email" name="email" placeholder="Votre email">
-            </div>
-            <div id="message">
-                <textarea id="textemessage" form="formcontact" placeholder="Votre message"></textarea>
-            </div>
-            <div id="boutoncontact">
-                <button type="submit">Contactez moi!</button>
-            </div>
-        </form>
+                <div id="boutoncontact">
+                    <button type="submit">Contactez-moi!</button>
+                </div>
+            </form>
     </section>
     <footer>
-        <div id="footersup">
-            <div id="presentationfooter">
-                <h2>Quentin HILLAIRET - Développeur Web Front-End</h2>
-                <p>Vous venez de visiter mon portfolio web, n'hésitez pas à prendre <a href="#contact"><em>contact</em></a> avec moi pour plus de renseignements.</p>
-                <div id="infoscontact">
-                    <span><i class="fa-solid fa-phone"></i> 0661944425</span>
-                    <span><i class="fa-solid fa-envelope"></i> hillairetq@gmail.com</span>
+            <div id="footersup">
+                <div id="presentationfooter">
+                    <h2>Quentin HILLAIRET <br> Développeur Web Front-End</h2>
+                    <p>Vous venez de visiter mon portfolio web, n'hésitez pas à prendre <a href="#contact"><em>contact</em></a> avec moi pour plus de renseignements.</p>
+                    <div id="infoscontact">
+                        <span><i class="fa-solid fa-phone"></i> 0661944425</span>
+                        <span><i class="fa-solid fa-envelope"></i> hillairetq@gmail.com</span>
+                    </div>
+                </div>
+                <div id="reseaux">
+                    <ul>
+                        <li><a target="_blank" href="https://github.com/QuentinHIL"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/quentin-hillairet/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
                 </div>
             </div>
-            <div id="reseaux">
-                <ul>
-                    <li><a target="_blank" href="https://github.com/QuentinHIL"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/quentin-hillairet/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <hr noshade>
-        <span>Touts droits réservés à Quentin HILLAIRET</span>
+            <hr noshade>
+            <span>Touts droits réservés à Quentin HILLAIRET</span>
     </footer>
     <script src="javascript/_selection.js"></script>
     <script src="javascript/_declencheanimationscroll.js"></script>

@@ -15,24 +15,18 @@
     margin: auto;
 }
 @mixin titre{
-    font-family: 'Rampart One', cursive;
+    font-family: 'Phudu', cursive;
     color: $text;
 }
 @mixin texte{
     font-family: 'Varela Round', sans-serif;
+    color: $text;
 }
-@mixin animfade{
-    @keyframes gradient {
-        0% {
-            background-position: 0% 75%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 75%;
-        }
-    }
+@mixin stylebouton{
+  background-color: $prim;
+  border-radius: 0.25rem;
+  border-style: none;
+  width: 25%;
 }
 @mixin animin{
     -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -75,8 +69,8 @@
   margin-bottom: 5rem;
 }
 @mixin glissegauche{
-  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
           @-webkit-keyframes slide-in-left {
             0% {
               -webkit-transform: translateX(-1000px);
@@ -104,8 +98,8 @@
 
 }
 @mixin glissedroite{
-  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
           @-webkit-keyframes slide-in-right {
             0% {
               -webkit-transform: translateX(1000px);
@@ -131,4 +125,35 @@
             }
           }
 }
-
+@mixin pulse{
+  -webkit-animation: pulsate-fwd 1.2s ease-in-out infinite both;
+	        animation: pulsate-fwd 1.2s ease-in-out infinite both;
+          @-webkit-keyframes pulsate-fwd {
+            0% {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+            }
+            50% {
+              -webkit-transform: scale(1.1);
+                      transform: scale(1.1);
+            }
+            100% {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+            }
+          }
+          @keyframes pulsate-fwd {
+            0% {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+            }
+            50% {
+              -webkit-transform: scale(1.1);
+                      transform: scale(1.1);
+            }
+            100% {
+              -webkit-transform: scale(1);
+                      transform: scale(1);
+            }
+          }
+}

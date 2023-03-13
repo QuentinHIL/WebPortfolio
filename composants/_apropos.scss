@@ -1,24 +1,70 @@
 #apropos{
     @include espacevertical;
-    #monparcours{
-        display: flex;
-        flex-direction: column;
+    h2{
         text-align: center;
+        @include titre;
+        color: $prim;
+        font-size: 2.5rem;
+    }
+    #monparcours{
+        @include marge80;
+        display: flex;
         margin-bottom: 2rem;
-        h2{
-            @include titre;
-            color: $prim;
-            font-size: 2rem;
+        #qsj{
+            width:60%;
+            h3{
+                @include titre;
+                color: $prim;
+                font-size: 2rem;
+            }
+            p{
+                width: 70%;
+                @include texte;
+                font-size: 1rem;
+                a{
+                    text-decoration: none;
+                    color: $prim;
+                }
+            }
+            button{
+                margin-top: 2rem;
+                @include stylebouton;
+                @include texte;
+                height: 3rem;
+                font-size: 1.25rem;
+                &:hover{
+                    cursor: pointer;
+                    @include pulse;
+                }
+            }
         }
-        p{
-            @include marge80;
-            @include texte;
-            font-size: 1rem;
+        #cursus{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            h3{
+                @include titre;
+                color: $prim;
+                font-size: 2rem;
+            }
+            ul{
+                list-style-type: "\1F393";
+                padding-left: 1.25rem;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                li{
+                    @include texte;
+                    color: $text;
+                    font-size: 1.25rem;
+                }
+            }
         }
     }
     #messavoirs{
         @include espacevertical;
-        h2{
+        h3{
             @include titre;
             color: $prim;
             font-size: 2rem;
@@ -32,18 +78,13 @@
             padding-bottom: 2rem;
             .competence{
                 width: 25%;
-                background-color: transparent;
                 font-size: 1.5rem;
-                border-radius: 0.25rem;
-                border-style: none dotted;
-                border-width: 2px;
+                height: 5rem;
+                @include stylebouton;
             }
             .competence:hover{
-                @include animfade;
                 cursor: pointer;
-                background: linear-gradient(-90deg,#ffffff,$prim, #ffffff);
-	            background-size: 600% 600%;
-	            animation: gradient 5s ease infinite;
+                @include pulse;
             }
         }
         #contcartes{

@@ -1,6 +1,6 @@
 footer{
-    background: rgb(2,128,144);
-    background: linear-gradient(130deg, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 53%, rgba(158,206,154,1) 100%);
+    background-image: url('images/blueback.jpg');
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     #footersup{
@@ -10,27 +10,27 @@ footer{
         display: flex;
         justify-content: space-between;
         #presentationfooter{
-            width:40%;
+            width:60%;
             h2{
-                @include police300;
-                font-size: 1.5rem;
-                color: $sec;
+                @include titre;
+                font-size: 2.5rem;
+                color: $text;
             }
             p{
-                @include police300;
+                @include texte;
                 font-size: 1rem;
-                color: $sec;
+                color: $text;
                 a{
                     text-decoration: none;
-                    color: $sec;
+                    color: $text;
                 }
             }
             #infoscontact{
                 display: flex;
                 justify-content: space-evenly;
                 span{
-                    @include police300;
-                    color: $sec;
+                    @include texte;
+                    color: $text;
                 }
             }
         }
@@ -50,7 +50,7 @@ footer{
                     a{
                         i{
                             font-size: 5rem;
-                            color: $prim;
+                            color: $text;
                         }
                     }
                 }
@@ -67,7 +67,7 @@ footer{
         padding-top: 2rem;
         padding-bottom: 2rem;
         text-align: center;
-        @include police300;
-        color: $sec;
+        @include texte;
+        color: $text;
     }
 }
