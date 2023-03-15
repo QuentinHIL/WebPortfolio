@@ -13,11 +13,18 @@
     <section id="hero">
             <header>
                 <a id="logo" href="index.html"><img src="images/QH.png" alt="Logo Quentin HILLAIRET Développement"></a>
-                <ul id="nav">
-                    <li><a href="#apropos">A propos</a></li>
-                    <li><a href="#projets">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <div id="contnavburger">
+                    <div id="contnav">
+                        <ul id="nav">
+                            <li><a href="#apropos">A propos</a></li>
+                            <li><a href="#projets">Projets</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a id="boutonburger" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </header>
             <div id="presentation">
                 <div id="textepresentation">
@@ -37,7 +44,9 @@
                 <div id="qsj">
                     <h3>Quelques mots me concernant</h3>
                     <p>Âgé de 26 ans et originaire de Vendée (Pays-de-la-Loire, France), j’ai suivi un cursus d’études supérieures dans le domaine de l’informatique industrielle (DUT GEII) puis dans le domaine des technologies du son (Licence professionnelle NTS). Les postes que j’ai occupés suite à mes études ne correspondant pas à mes objectifs et à mes attentes, j’ai pris la décision d’entamer une reconversion professionnelle en ayant comme objectif de devenir <a href="#messavoirs"><em>développeur web</em></a>. Actuellement diplômé d’un titre de développeur web Front-End, je recherche activement une entreprise pour obtenir une première expérience professionnelle.</p>
-                    <button onclick="window.open('docs/CVQH.pdf', '_blank')">Étudiez mon CV</button>
+                    <div id="contboutoncv">
+                        <button onclick="window.open('docs/CVQH.pdf', '_blank')">Étudiez mon CV</button>
+                    </div>
                 </div>
                 <div id="cursus">
                     <h3>Cursus</h3>
@@ -66,7 +75,7 @@
                 <div id="contcartes">
                     <div class="cartes" id="dev">
                         <article class="contenu">
-                            <h3>Développement web Front End</h3>
+                            <h4>Développement web Front End</h4>
                             <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -80,7 +89,7 @@
                     </div>
                     <div class="cartes" id="maquette">
                         <article class="contenu" id="design">
-                            <h3>Maquettage/Design UX UI</h3>
+                            <h4>Maquettage/Design UX UI</h4>
                             <ul>
                                 <li>FIGMA</li>
                                 <li>WIREFRAMES</li>
@@ -92,7 +101,7 @@
                     </div>
                     <div class="cartes" id="humain">
                         <article class="contenu">
-                            <h3>Valeurs humaines</h3>
+                            <h4>Valeurs humaines</h4>
                             <ul>
                                 <li>DYNAMISME</li>
                                 <li>ALTRUISME</li>
@@ -111,7 +120,7 @@
             <p>Vous trouverez ici des projets réalisés dans le cadre de ma formation ou des projets personnels. Vous pourrez découvrir d’autres réalisations en parcourant mon <a target="_blank" href="https://github.com/QuentinHIL"><em>GitHub</em></a>. J’ai hâte de pouvoir vous partager mes futurs projets. Stay tuned !</p>
             <div id="contprojets">
                 <div id="contprojun">
-                    <div class="projet" id="projetun">
+                    <div class="projet projettab" id="projetun">
                         <a target="_blank" href="https://canada-quentin-test.fr/ddd/">
                             <img src="images/dddmockup.png" alt="mockup du site dealeuse de délices">
                         </a>
@@ -213,5 +222,6 @@
     </footer>
     <script src="javascript/_selection.js"></script>
     <script src="javascript/_declencheanimationscroll.js"></script>
+    <script src="javascript/_burger.js"></script>
 </body>
 </html>

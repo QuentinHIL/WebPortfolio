@@ -3,20 +3,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&family=Varela+Round&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
 #hero {
+  z-index: 0;
+  position: relative;
   height: 95vh;
   background-image: url("images/blueback.jpg");
   background-attachment: fixed;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 #hero header {
-  width: 90%;
+  width: 80%;
   margin: auto;
   margin-top: 0;
-  background: transparent;
+  margin-bottom: 0;
+  width: 99%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #hero header a:hover {
   -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
@@ -72,14 +78,30 @@
     opacity: 1;
   }
 }
-#hero header #nav {
+#hero header #contnavburger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+}
+#hero header #contnavburger #contnav {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  #hero header #contnavburger #contnav {
+    display: none;
+  }
+}
+#hero header #contnavburger #contnav #nav {
   -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
+  padding: 0;
 }
 @-webkit-keyframes slide-in-right {
   0% {
@@ -101,11 +123,13 @@
     opacity: 1;
   }
 }
-#hero header #nav li {
-  list-style: none;
-  padding: 0;
+@media only screen and (max-width: 768px) {
+  #hero header #contnavburger #contnav #nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-#hero header #nav li:hover {
+#hero header #contnavburger #contnav #nav li:hover {
   -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
   animation: pulsate-fwd 1.5s ease-in-out infinite both;
 }
@@ -131,7 +155,7 @@
     transform: scale(1);
   }
 }
-#hero header #nav li a {
+#hero header #contnavburger #contnav #nav li a {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   font-size: 1.25rem;
@@ -139,9 +163,20 @@
   scroll-behavior: smooth;
   text-decoration: none;
 }
+#hero header #contnavburger #boutonburger {
+  justify-content: flex-end;
+}
+@media only screen and (min-width: 769px), only screen and (max-width: infinite) {
+  #hero header #contnavburger #boutonburger {
+    display: none;
+  }
+}
+#hero header #contnavburger #boutonburger i {
+  color: black;
+}
 #hero #presentation {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 #hero #presentation #textepresentation {
   -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -263,8 +298,18 @@
   display: flex;
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  #apropos #monparcours {
+    flex-direction: column;
+  }
+}
 #apropos #monparcours #qsj {
   width: 60%;
+}
+@media only screen and (max-width: 768px) {
+  #apropos #monparcours #qsj {
+    width: 100%;
+  }
 }
 #apropos #monparcours #qsj h3 {
   font-family: "Phudu", cursive;
@@ -278,11 +323,25 @@
   color: rgb(40, 39, 39);
   font-size: 1rem;
 }
+@media only screen and (max-width: 768px) {
+  #apropos #monparcours #qsj p {
+    width: 100%;
+  }
+}
 #apropos #monparcours #qsj p a {
   text-decoration: none;
   color: #5BA4CC;
 }
-#apropos #monparcours #qsj button {
+#apropos #monparcours #qsj #contboutoncv {
+  display: flex;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 768px) {
+  #apropos #monparcours #qsj #contboutoncv {
+    justify-content: center;
+  }
+}
+#apropos #monparcours #qsj #contboutoncv button {
   margin-top: 2rem;
   background-color: #5BA4CC;
   border-radius: 0.25rem;
@@ -293,7 +352,7 @@
   height: 3rem;
   font-size: 1.25rem;
 }
-#apropos #monparcours #qsj button:hover {
+#apropos #monparcours #qsj #contboutoncv button:hover {
   cursor: pointer;
   -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
   animation: pulsate-fwd 1.5s ease-in-out infinite both;
@@ -325,6 +384,11 @@
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 768px) {
+  #apropos #monparcours #cursus {
+    width: 100%;
+  }
+}
 #apropos #monparcours #cursus h3 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
@@ -345,6 +409,11 @@
   color: rgb(40, 39, 39);
   font-size: 1.25rem;
 }
+@media only screen and (max-width: 768px) {
+  #apropos #monparcours #cursus ul li {
+    width: 100%;
+  }
+}
 #apropos #messavoirs {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -356,15 +425,16 @@
   font-size: 2rem;
   text-align: center;
 }
-#apropos #messavoirs .boutons {
+#apropos #messavoirs #contboutons .boutons {
   width: 80%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-#apropos #messavoirs .boutons .competence {
+#apropos #messavoirs #contboutons .boutons .competence {
   width: 25%;
   font-size: 1.5rem;
   height: 5rem;
@@ -373,7 +443,12 @@
   border-style: none;
   width: 25%;
 }
-#apropos #messavoirs .boutons .competence:hover {
+@media only screen and (max-width: 768px) {
+  #apropos #messavoirs #contboutons .boutons .competence {
+    width: 30%;
+  }
+}
+#apropos #messavoirs #contboutons .boutons .competence:hover {
   cursor: pointer;
   -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
   animation: pulsate-fwd 1.5s ease-in-out infinite both;
@@ -403,22 +478,24 @@
 #apropos #messavoirs #contcartes .cartes {
   display: none;
 }
-#apropos #messavoirs #contcartes .cartes .contenu h3 {
+#apropos #messavoirs #contcartes .cartes .contenu h4 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   color: #5BA4CC;
   text-align: center;
 }
 #apropos #messavoirs #contcartes .cartes .contenu ul {
   list-style: none;
+  padding-left: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 #apropos #messavoirs #contcartes .cartes .contenu ul li {
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -428,7 +505,7 @@
   margin-top: 1rem;
 }
 #apropos #messavoirs #contcartes #dev {
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 #apropos #messavoirs #contcartes #maquette {
@@ -505,6 +582,7 @@
 #projets #contprojets {
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
 }
 #projets #contprojets .projet {
   width: 80%;
@@ -513,6 +591,12 @@
   margin-bottom: 5rem;
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 1440px) {
+  #projets #contprojets .projet {
+    width: 90%;
+    margin: auto;
+  }
 }
 #projets #contprojets .projet a {
   color: black;
@@ -549,6 +633,11 @@
   height: auto;
   box-shadow: 5px 5px 10px;
 }
+@media only screen and (max-width: 1440px) {
+  #projets #contprojets .projet a img {
+    width: 35rem;
+  }
+}
 #projets #contprojets .projet .presentationprojet {
   width: 50%;
   align-items: start;
@@ -558,6 +647,8 @@
 #projets #contprojets .projet .presentationprojet h3 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
+  margin-top: 0;
+  margin-bottom: 0;
   color: #5BA4CC;
   align-self: center;
   font-size: 2rem;
@@ -566,6 +657,8 @@
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
   text-align: center;
+  width: 90%;
+  margin: auto;
 }
 #projets #contprojets .projet .presentationprojet button {
   background-color: #5BA4CC;
@@ -638,6 +731,14 @@
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1440px) {
+  #projets #contprojets .projetinv {
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
 #projets #contprojets .projetinv a {
   color: black;
 }
@@ -673,6 +774,11 @@
   height: auto;
   box-shadow: 5px 5px 10px;
 }
+@media only screen and (max-width: 1440px) {
+  #projets #contprojets .projetinv a img {
+    width: 35rem;
+  }
+}
 #projets #contprojets .projetinv .presentationprojet {
   width: 50%;
   align-items: end;
@@ -682,6 +788,8 @@
 #projets #contprojets .projetinv .presentationprojet h3 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
+  margin-top: 0;
+  margin-bottom: 0;
   color: #5BA4CC;
   align-self: center;
   font-size: 2rem;
@@ -698,6 +806,7 @@
   width: 25%;
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
+  width: 40%;
   height: 3rem;
   font-size: 1.25rem;
   align-self: center;
@@ -882,6 +991,11 @@ footer #footersup {
 footer #footersup #presentationfooter {
   width: 60%;
 }
+@media only screen and (max-width: 1024px) {
+  footer #footersup #presentationfooter {
+    width: 70%;
+  }
+}
 footer #footersup #presentationfooter h2 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
@@ -912,16 +1026,25 @@ footer #footersup #reseaux {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 1024px) {
+  footer #footersup #reseaux {
+    width: 30%;
+  }
+}
 footer #footersup #reseaux ul {
   width: 100%;
+  list-style: none;
+  padding-left: 0;
   display: flex;
   justify-content: flex-end;
 }
+@media only screen and (max-width: 1024px) {
+  footer #footersup #reseaux ul {
+    justify-content: space-evenly;
+  }
+}
 footer #footersup #reseaux ul li {
   width: 25%;
-  list-style: none;
-  display: flex;
-  justify-content: center;
 }
 footer #footersup #reseaux ul li a:hover {
   -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
@@ -953,6 +1076,11 @@ footer #footersup #reseaux ul li a:hover {
 footer #footersup #reseaux ul li a i {
   font-size: 5rem;
   color: rgb(40, 39, 39);
+}
+@media only screen and (max-width: 1024px) {
+  footer #footersup #reseaux ul li a i {
+    font-size: 4rem;
+  }
 }
 footer hr {
   width: 80%;

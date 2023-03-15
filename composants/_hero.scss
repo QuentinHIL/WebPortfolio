@@ -1,16 +1,22 @@
 #hero{
+    z-index: 0;
+    position: relative;
     height: 95vh;
     background-image: url('images/blueback.jpg');
     background-attachment: fixed;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     header{
-        @include marge90;
+        @include marge80;
         margin-top: 0;
-        background: transparent;
+        margin-bottom: 0;
+        width:99%;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        background-color: transparent;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         a{
             &:hover{
                 @include pulse;
@@ -23,32 +29,55 @@
                 background: $prim;//linear-gradient( transparent 0 20%, rgb(84, 83, 83), transparent 80% 100%) 50%;
             }
         }
-        #nav{
-            @include glissedroite;
-            width: 30%;
+        #contnavburger{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             align-items: center;
-            li{
-                list-style: none;
-                padding: 0;
-                &:hover{
-                    @include pulse;
+            justify-content: flex-end;
+            width:30%;
+            #contnav{
+                width: 100%;
+                @media only screen and (max-width:768px){
+                    display: none;
                 }
-                a{
-                    @include titre;
-                    font-size: 1.25rem;
-                    color: $text;
-                    scroll-behavior: smooth;
-                    text-decoration: none;
+                #nav{
+                    @include glissedroite;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    list-style: none;
+                    padding: 0;
+                    @media only screen and (max-width:768px){
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    li{
+                        &:hover{
+                            @include pulse;
+                        }
+                        a{
+                            @include titre;
+                            font-size: 1.25rem;
+                            color: $text;
+                            scroll-behavior: smooth;
+                            text-decoration: none;
+                        }
+                    }
                 }
+            }
+            #boutonburger{
+                justify-content: flex-end;
+                @media only screen and (min-width:769px), only screen and (max-width: infinite){
+                    display: none;
+                }
+                i{color: black;}
             }
         }
     }
     #presentation{
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         #textepresentation{
             @include glissegauche;
             width:80%;
