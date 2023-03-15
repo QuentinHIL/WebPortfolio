@@ -71,13 +71,19 @@
                 @media only screen and (min-width:769px), only screen and (max-width: infinite){
                     display: none;
                 }
-                i{color: black;}
+                i{
+                    font-size: 2rem;
+                    color: black;
+                }
             }
         }
     }
     #presentation{
         display: flex;
         align-items: center;
+        @media only screen and (max-width:760px){
+            flex-direction: column;
+        }
         #textepresentation{
             @include glissegauche;
             width:80%;
@@ -87,12 +93,19 @@
                 font-size: 3rem;
                 color: $text;
                 text-align: center;
+                @media only screen and (max-width:760px){
+                    margin-top: 10rem;
+                    font-size: 2rem;
+                }
             }
             p{
                 @include marge60;
                 @include texte;
                 color: $text;
                 text-align: center;
+                @media only screen and (max-width:760px){
+                    width: 100%;
+                }
                 a{
                     text-decoration: none;
                     color: $text;
@@ -105,6 +118,9 @@
             display: flex;
             justify-content: flex-end;
             align-self: flex-end;
+            @media only screen and (max-width:760px){
+                width: 38.2%;
+            }
             #photo{
                 max-width:100%;
                 height: auto;
