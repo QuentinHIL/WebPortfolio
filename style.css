@@ -24,30 +24,32 @@
   justify-content: space-between;
   align-items: center;
 }
-#hero header a:hover {
-  -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  animation: pulsate-fwd 1.5s ease-in-out infinite both;
-}
-@-webkit-keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
+@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
+  #hero header a:hover {
+    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
+    animation: pulsate-fwd 1.5s ease-in-out infinite both;
   }
-  50% {
-    transform: scale(1.1);
+  @-webkit-keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+  @keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 #hero header a img {
@@ -1220,31 +1222,33 @@ footer #footersup #reseaux ul {
 footer #footersup #reseaux ul li {
   width: 25%;
 }
-footer #footersup #reseaux ul li a:hover {
-  -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  cursor: pointer;
-}
-@-webkit-keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
+@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
+  footer #footersup #reseaux ul li a:hover {
+    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
+    animation: pulsate-fwd 1.5s ease-in-out infinite both;
+    cursor: pointer;
   }
-  50% {
-    transform: scale(1.1);
+  @-webkit-keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+  @keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 footer #footersup #reseaux ul li a i {
