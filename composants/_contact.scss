@@ -7,13 +7,18 @@
     }
     form{
         @include marge80;
+        @media only screen and (max-width:760px){
+            @include marge90;
+        }
         #genre{
-            @include marge80;
             padding-top: 2rem;
             padding-bottom: 2rem;
             display:flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            @media only screen and (max-width:760px){
+                justify-content: space-evenly;
+            }
             .radiobouton{
                 width: 20px;
                 height: 20px;
@@ -27,19 +32,24 @@
             } 
         }
         #identite{
-            @include marge80;
             padding-top: 1rem;
             padding-bottom: 2rem;
             display:flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            @media only screen and (max-width:760px){
+                justify-content: space-evenly;
+            }
             .entreeidentite{
                 @include texte;
                 width: 25%;
+                @media only screen and (max-width:760px){
+                    width: 45%;
+                    margin-top: 1rem;
+                }
             }
         }
         #message{   
-            @include marge80;
             padding-top: 1rem;
             padding-bottom: 2rem; 
             #textemessage{
@@ -58,8 +68,24 @@
             button{
                 @include stylebouton;
                 @include texte;
+                width: 20%;
                 height: 5rem;
                 font-size: 1.5rem;
+                @media only screen and (max-width:1440px){
+                    width: 25%;
+                }
+                @media only screen and (max-width:992px){
+                    width: 30%;
+                    height: 4rem;
+                }
+                @media only screen and (max-width:778px){
+                    width: 50%;
+                    height: 3rem;
+                }
+                @media only screen and (max-width:425px){
+                    width: 75%;
+                    height: 2.5rem;
+                }
             }
             button:hover{
                 cursor: pointer;

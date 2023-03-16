@@ -44,6 +44,12 @@
                     @media only screen and (max-width:1440px){
                         width: 35rem;
                     }
+                    @media only screen and (max-width:760px){
+                        width: 22rem;
+                    }
+                    @media only screen and (max-width:370px){
+                        width: 17rem;
+                    }
                 }
             }
             .presentationprojet{
@@ -51,6 +57,11 @@
                 align-items: start;
                 display: flex;
                 flex-direction: column;
+                @media only screen and (max-width:760px){
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 2rem;
+                }
                 h3{
                     @include titre;
                     @include nomargetopbottom;
@@ -62,6 +73,10 @@
                     @include texte;
                     text-align: center;
                     @include marge90;
+                    @media only screen and (max-width:1020px){
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                    }
                 }
                 button{
                     @include stylebouton;
@@ -106,6 +121,12 @@
                     @media only screen and (max-width:1440px){
                         width: 35rem;
                     }
+                    @media only screen and (max-width:760px){
+                        width: 22rem;
+                    }
+                    @media only screen and (max-width:370px){
+                        width: 17rem;
+                    }
                 }
             }
             .presentationprojet{
@@ -113,6 +134,11 @@
                 align-items: end;
                 display: flex;
                 flex-direction: column;
+                @media only screen and (max-width:760px){
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 2rem;
+                }
                 h3{
                     @include titre;
                     @include nomargetopbottom;
@@ -123,6 +149,11 @@
                 p{
                     @include texte;
                     text-align: center;
+                    @include marge90;
+                    @media only screen and (max-width:1020px){
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                    }
                 }
                 button{
                     @include stylebouton;

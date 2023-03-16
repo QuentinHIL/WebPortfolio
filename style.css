@@ -374,6 +374,11 @@
   height: 3rem;
   font-size: 1.25rem;
 }
+@media only screen and (max-width: 760px) {
+  #apropos #monparcours #qsj #contboutoncv button {
+    width: 50%;
+  }
+}
 #apropos #monparcours #qsj #contboutoncv button:hover {
   cursor: pointer;
   -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
@@ -456,8 +461,21 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+@media only screen and (max-width: 768px) {
+  #apropos #messavoirs #contboutons .boutons {
+    justify-content: space-evenly;
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #apropos #messavoirs #contboutons .boutons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #apropos #messavoirs #contboutons .boutons .competence {
   width: 25%;
+  align-items: center;
   font-size: 1.5rem;
   height: 5rem;
   background-color: #5BA4CC;
@@ -467,7 +485,13 @@
 }
 @media only screen and (max-width: 768px) {
   #apropos #messavoirs #contboutons .boutons .competence {
-    width: 30%;
+    width: 40%;
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #apropos #messavoirs #contboutons .boutons .competence {
+    width: 60%;
   }
 }
 #apropos #messavoirs #contboutons .boutons .competence:hover {
@@ -666,11 +690,28 @@
     width: 35rem;
   }
 }
+@media only screen and (max-width: 760px) {
+  #projets #contprojets .projet a img {
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  #projets #contprojets .projet a img {
+    width: 17rem;
+  }
+}
 #projets #contprojets .projet .presentationprojet {
   width: 50%;
   align-items: start;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 760px) {
+  #projets #contprojets .projet .presentationprojet {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
 #projets #contprojets .projet .presentationprojet h3 {
   font-family: "Phudu", cursive;
@@ -687,6 +728,12 @@
   text-align: center;
   width: 90%;
   margin: auto;
+}
+@media only screen and (max-width: 1020px) {
+  #projets #contprojets .projet .presentationprojet p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 #projets #contprojets .projet .presentationprojet button {
   background-color: #5BA4CC;
@@ -813,11 +860,28 @@
     width: 35rem;
   }
 }
+@media only screen and (max-width: 760px) {
+  #projets #contprojets .projetinv a img {
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  #projets #contprojets .projetinv a img {
+    width: 17rem;
+  }
+}
 #projets #contprojets .projetinv .presentationprojet {
   width: 50%;
   align-items: end;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 760px) {
+  #projets #contprojets .projetinv .presentationprojet {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
 #projets #contprojets .projetinv .presentationprojet h3 {
   font-family: "Phudu", cursive;
@@ -832,6 +896,14 @@
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
   text-align: center;
+  width: 90%;
+  margin: auto;
+}
+@media only screen and (max-width: 1020px) {
+  #projets #contprojets .projetinv .presentationprojet p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 #projets #contprojets .projetinv .presentationprojet button {
   background-color: #5BA4CC;
@@ -915,14 +987,23 @@
   width: 80%;
   margin: auto;
 }
+@media only screen and (max-width: 760px) {
+  #contact form {
+    width: 90%;
+    margin: auto;
+  }
+}
 #contact form #genre {
-  width: 80%;
-  margin: auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media only screen and (max-width: 760px) {
+  #contact form #genre {
+    justify-content: space-evenly;
+  }
 }
 #contact form #genre .radiobouton {
   width: 20px;
@@ -937,22 +1018,29 @@
   font-size: 1.5rem;
 }
 #contact form #identite {
-  width: 80%;
-  margin: auto;
   padding-top: 1rem;
   padding-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media only screen and (max-width: 760px) {
+  #contact form #identite {
+    justify-content: space-evenly;
+  }
+}
 #contact form #identite .entreeidentite {
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
   width: 25%;
 }
+@media only screen and (max-width: 760px) {
+  #contact form #identite .entreeidentite {
+    width: 45%;
+    margin-top: 1rem;
+  }
+}
 #contact form #message {
-  width: 80%;
-  margin: auto;
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
@@ -977,8 +1065,32 @@
   width: 25%;
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
+  width: 20%;
   height: 5rem;
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 1440px) {
+  #contact form #boutoncontact button {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #contact form #boutoncontact button {
+    width: 30%;
+    height: 4rem;
+  }
+}
+@media only screen and (max-width: 778px) {
+  #contact form #boutoncontact button {
+    width: 50%;
+    height: 3rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #contact form #boutoncontact button {
+    width: 75%;
+    height: 2.5rem;
+  }
 }
 #contact form #boutoncontact button:hover {
   cursor: pointer;
@@ -1036,6 +1148,11 @@ footer #footersup #presentationfooter h2 {
   font-size: 2.5rem;
   color: rgb(40, 39, 39);
 }
+@media only screen and (max-width: 760px) {
+  footer #footersup #presentationfooter h2 {
+    font-size: 2rem;
+  }
+}
 footer #footersup #presentationfooter p {
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
@@ -1050,10 +1167,21 @@ footer #footersup #presentationfooter #infoscontact {
   display: flex;
   justify-content: space-evenly;
 }
+@media only screen and (max-width: 760px) {
+  footer #footersup #presentationfooter #infoscontact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 footer #footersup #presentationfooter #infoscontact span {
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
   color: rgb(40, 39, 39);
+}
+@media only screen and (max-width: 760px) {
+  footer #footersup #presentationfooter #infoscontact span {
+    padding-top: 0;
+  }
 }
 footer #footersup #reseaux {
   width: 40%;
@@ -1075,6 +1203,18 @@ footer #footersup #reseaux ul {
 @media only screen and (max-width: 1024px) {
   footer #footersup #reseaux ul {
     justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 760px) {
+  footer #footersup #reseaux ul {
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  footer #footersup #reseaux ul {
+    height: 80%;
   }
 }
 footer #footersup #reseaux ul li {
