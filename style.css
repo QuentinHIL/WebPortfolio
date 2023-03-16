@@ -28,6 +28,7 @@
   #hero header a:hover {
     -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
     animation: pulsate-fwd 1.5s ease-in-out infinite both;
+    cursor: pointer;
   }
   @-webkit-keyframes pulsate-fwd {
     0% {
@@ -131,30 +132,33 @@
     align-items: center;
   }
 }
-#hero header #contnavburger #contnav #nav li:hover {
-  -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  animation: pulsate-fwd 1.5s ease-in-out infinite both;
-}
-@-webkit-keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
+@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
+  #hero header #contnavburger #contnav #nav li button:hover {
+    cursor: pointer;
+    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
+    animation: pulsate-fwd 1.5s ease-in-out infinite both;
   }
-  50% {
-    transform: scale(1.1);
+  @-webkit-keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+  @keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 #hero header #contnavburger #contnav #nav li a {
@@ -381,31 +385,33 @@
     width: 50%;
   }
 }
-#apropos #monparcours #qsj #contboutoncv button:hover {
-  cursor: pointer;
-  -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  animation: pulsate-fwd 1.5s ease-in-out infinite both;
-}
-@-webkit-keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
+@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
+  #apropos #monparcours #qsj #contboutoncv button button:hover {
+    cursor: pointer;
+    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
+    animation: pulsate-fwd 1.5s ease-in-out infinite both;
   }
-  50% {
-    transform: scale(1.1);
+  @-webkit-keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+  @keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 #apropos #monparcours #cursus {
@@ -748,31 +754,33 @@
   font-size: 1.25rem;
   align-self: center;
 }
-#projets #contprojets .projet .presentationprojet button:hover {
-  cursor: pointer;
-  -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  animation: pulsate-fwd 1.5s ease-in-out infinite both;
-}
-@-webkit-keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
+@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
+  #projets #contprojets .projet .presentationprojet button:hover {
+    cursor: pointer;
+    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
+    animation: pulsate-fwd 1.5s ease-in-out infinite both;
   }
-  50% {
-    transform: scale(1.1);
+  @-webkit-keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+  @keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 #projets #contprojets .entreegauche {
@@ -919,31 +927,33 @@
   font-size: 1.25rem;
   align-self: center;
 }
-#projets #contprojets .projetinv .presentationprojet button:hover {
-  cursor: pointer;
-  -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  animation: pulsate-fwd 1.5s ease-in-out infinite both;
-}
-@-webkit-keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
+@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
+  #projets #contprojets .projetinv .presentationprojet button:hover {
+    cursor: pointer;
+    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
+    animation: pulsate-fwd 1.5s ease-in-out infinite both;
   }
-  50% {
-    transform: scale(1.1);
+  @-webkit-keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+  @keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 #projets #contprojets .entreedroite {
@@ -1094,31 +1104,33 @@
     height: 2.5rem;
   }
 }
-#contact form #boutoncontact button:hover {
-  cursor: pointer;
-  -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  animation: pulsate-fwd 1.5s ease-in-out infinite both;
-}
-@-webkit-keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
+@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
+  #contact form #boutoncontact button:hover {
+    cursor: pointer;
+    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
+    animation: pulsate-fwd 1.5s ease-in-out infinite both;
   }
-  50% {
-    transform: scale(1.1);
+  @-webkit-keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+  @keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 
