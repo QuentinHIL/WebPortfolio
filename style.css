@@ -447,6 +447,7 @@
 @media only screen and (max-width: 768px) {
   #apropos #monparcours #cursus ul li {
     width: 100%;
+    margin-top: 1rem;
   }
 }
 #apropos #messavoirs {
