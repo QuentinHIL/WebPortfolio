@@ -1,180 +1,182 @@
 #projets{
     @include espacevertical;
-    h2{
-        @include titre;
-        font-size: 2.5rem;
-        color: $prim;
-        text-align: center;
-    }
-    p{
-        @include texte;
-        @include marge70;
-        text-align: center;
-        a{
-            text-decoration: none;
+    #contprojetweb{
+        h2{
+            @include titre;
+            font-size: 2.5rem;
             color: $prim;
+            text-align: center;
         }
-    }
-    #contprojets{
-        display: flex;
-        flex-direction: column;
-        margin-top: 5rem;
-        .projet{
-            @include marge80;
-            @include espacevertical;
-            display: flex;
-            justify-content: space-between;
-            @media only screen and (max-width:1440px){
-                @include marge90;
-            }
-            @media only screen and (max-width:1020px){
-                flex-direction: column;
-                align-items: center;
-            }
+        p{
+            @include texte;
+            @include marge70;
+            text-align: center;
             a{
-                color:black;
-                &:hover{
-                    @include pulse;
-                }
-                img{
-                    border-radius: 0.25rem;
-                    width:40rem;
-                    height: auto;
-                    box-shadow: 5px 5px 10px;
-                    @media only screen and (max-width:1440px){
-                        width: 35rem;
-                    }
-                    @media only screen and (max-width:760px){
-                        width: 22rem;
-                    }
-                    @media only screen and (max-width:370px){
-                        width: 17rem;
-                    }
-                }
-            }
-            .presentationprojet{
-                width: 50%;
-                align-items: start;
-                display: flex;
-                flex-direction: column;
-                @media only screen and (max-width:760px){
-                    width: 100%;
-                    text-align: center;
-                    margin-top: 2rem;
-                }
-                h3{
-                    @include titre;
-                    @include nomargetopbottom;
-                    color: $prim;
-                    align-self: center;
-                    font-size: 2rem;
-                }
-                p{
-                    @include texte;
-                    text-align: center;
-                    @include marge90;
-                    @media only screen and (max-width:1020px){
-                        margin-top: 1rem;
-                        margin-bottom: 1rem;
-                    }
-                }
-                button{
-                    @include stylebouton;
-                    @include texte;
-                    height: 3rem;
-                    font-size: 1.25rem;
-                    align-self: center;
-                }
-                @media only screen and (min-width:430px), only screen and (max-width: infinite){
-                    button:hover{
-                        cursor: pointer;
-                        @include pulse;
-                    }      
-                }
+                text-decoration: none;
+                color: $prim;
             }
         }
-        .entreegauche{
-            @include glissegauche;
-        }
-        .projetinv{
-            @include marge80;
-            @include espacevertical;
+        #contprojets{
             display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            @media only screen and (max-width:1440px){
-                @include marge90;
+            flex-direction: column;
+            margin-top: 5rem;
+            .projet{
+                @include marge80;
                 @include espacevertical;
-            }
-            @media only screen and (max-width:1020px){
-                flex-direction: column;
-                align-items: center;
-            }
-            a{
-                color:black;
-                &:hover{
-                    @include pulse;
-                }
-                img{
-                    border-radius: 0.25rem;
-                    width: 40rem;
-                    height: auto;
-                    box-shadow: 5px 5px 10px;
-                    @media only screen and (max-width:1440px){
-                        width: 35rem;
-                    }
-                    @media only screen and (max-width:760px){
-                        width: 22rem;
-                    }
-                    @media only screen and (max-width:370px){
-                        width: 17rem;
-                    }
-                }
-            }
-            .presentationprojet{
-                width: 50%;
-                align-items: end;
                 display: flex;
-                flex-direction: column;
-                @media only screen and (max-width:760px){
-                    width: 100%;
-                    text-align: center;
-                    margin-top: 2rem;
-                }
-                h3{
-                    @include titre;
-                    @include nomargetopbottom;
-                    color: $prim;
-                    align-self: center;
-                    font-size: 2rem;
-                }
-                p{
-                    @include texte;
-                    text-align: center;
+                justify-content: space-between;
+                @media only screen and (max-width:1440px){
                     @include marge90;
-                    @media only screen and (max-width:1020px){
-                        margin-top: 1rem;
-                        margin-bottom: 1rem;
+                }
+                @media only screen and (max-width:1020px){
+                    flex-direction: column;
+                    align-items: center;
+                }
+                a{
+                    color:black;
+                    &:hover{
+                        @include pulse;
+                    }
+                    img{
+                        border-radius: 0.25rem;
+                        width:40rem;
+                        height: auto;
+                        box-shadow: 5px 5px 10px;
+                        @media only screen and (max-width:1440px){
+                            width: 35rem;
+                        }
+                        @media only screen and (max-width:760px){
+                            width: 22rem;
+                        }
+                        @media only screen and (max-width:370px){
+                            width: 17rem;
+                        }
                     }
                 }
-                button{
-                    @include stylebouton;
-                    @include texte;
-                    width: 40%;
-                    height: 3rem;
-                    font-size: 1.25rem;
-                    align-self: center;
+                .presentationprojet{
+                    width: 50%;
+                    align-items: start;
+                    display: flex;
+                    flex-direction: column;
+                    @media only screen and (max-width:760px){
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 2rem;
+                    }
+                    h3{
+                        @include titre;
+                        @include nomargetopbottom;
+                        color: $prim;
+                        align-self: center;
+                        font-size: 2rem;
+                    }
+                    p{
+                        @include texte;
+                        text-align: center;
+                        @include marge90;
+                        @media only screen and (max-width:1020px){
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    button{
+                        @include stylebouton;
+                        @include texte;
+                        height: 3rem;
+                        font-size: 1.25rem;
+                        align-self: center;
+                    }
+                    @media only screen and (min-width:430px), only screen and (max-width: infinite){
+                        button:hover{
+                            cursor: pointer;
+                            @include pulse;
+                        }      
+                    }
                 }
-                @media only screen and (min-width:430px), only screen and (max-width: infinite){
-                    button:hover{
-                        cursor: pointer;
-                        @include pulse;
-                    }      
-                }   
             }
-        }
-        .entreedroite{
-            @include glissedroite;
+            .entreegauche{
+                @include glissegauche;
+            }
+            .projetinv{
+                @include marge80;
+                @include espacevertical;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                @media only screen and (max-width:1440px){
+                    @include marge90;
+                    @include espacevertical;
+                }
+                @media only screen and (max-width:1020px){
+                    flex-direction: column;
+                    align-items: center;
+                }
+                a{
+                    color:black;
+                    &:hover{
+                        @include pulse;
+                    }
+                    img{
+                        border-radius: 0.25rem;
+                        width: 40rem;
+                        height: auto;
+                        box-shadow: 5px 5px 10px;
+                        @media only screen and (max-width:1440px){
+                            width: 35rem;
+                        }
+                        @media only screen and (max-width:760px){
+                            width: 22rem;
+                        }
+                        @media only screen and (max-width:370px){
+                            width: 17rem;
+                        }
+                    }
+                }
+                .presentationprojet{
+                    width: 50%;
+                    align-items: end;
+                    display: flex;
+                    flex-direction: column;
+                    @media only screen and (max-width:760px){
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 2rem;
+                    }
+                    h3{
+                        @include titre;
+                        @include nomargetopbottom;
+                        color: $prim;
+                        align-self: center;
+                        font-size: 2rem;
+                    }
+                    p{
+                        @include texte;
+                        text-align: center;
+                        @include marge90;
+                        @media only screen and (max-width:1020px){
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    button{
+                        @include stylebouton;
+                        @include texte;
+                        width: 40%;
+                        height: 3rem;
+                        font-size: 1.25rem;
+                        align-self: center;
+                    }
+                    @media only screen and (min-width:430px), only screen and (max-width: infinite){
+                        button:hover{
+                            cursor: pointer;
+                            @include pulse;
+                        }      
+                    }   
+                }
+            }
+            .entreedroite{
+                @include glissedroite;
+            }
         }
     }
     hr{
@@ -182,5 +184,102 @@
         height: 5px;
         border-style: none;
         background-color: $prim;
+    }
+    #contprojetdesign{
+        h2{
+            @include titre;
+            font-size: 2.5rem;
+            color: $prim;
+            text-align: center;
+        }
+        h3{
+            @include titre;
+            @include nomargetopbottom;
+            color: $prim;
+            text-align: center;
+            font-size: 2rem;
+        }
+        #contgallerie{
+            // position du conteneur pour placer les boutons avant arrière
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            // on cache les images par défaut
+            .diapo{
+                display: none;
+                img{
+                    max-width: 70%;
+                    max-height: 90vh;
+                    display: block;
+                    margin: auto;
+                }
+                 // conteneur du texte de l'image
+                .texteimage {
+                text-align: center;
+                background-color: #222;
+                padding: 2px 16px;
+                color: white;
+                }
+                // position et affichage de l'indice de l'image
+                .indice {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+                }
+            }
+            // boutons avant arrière
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: $prim;
+                font-weight: bold;
+                font-size: 3rem;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+            // position du bouton droite
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+              }
+            // effet de fond sur les boutons quand hover
+            .prev:hover, .next:hover {
+                 background-color: rgba(0, 0, 0, 0.6);
+            }
+            // animation fade
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+              }
+              
+              @keyframes fade {
+                from {opacity: .4}
+                to {opacity: 1}
+              }
+            #alignecercles{
+                text-align: center;
+                 //cercles de reperes
+            .cercle{
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: $prim;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;    
+            }
+            .active, .cercle:hover {
+                background-color: $primdeuxtest;
+              }
+            }
+        }
     }
 }

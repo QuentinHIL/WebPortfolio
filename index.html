@@ -116,7 +116,8 @@
             <hr noshade>
     </section>
     <section id="projets">
-            <h2>Projets</h2>
+        <div id="contprojetweb">
+            <h2>Projets Web</h2>
             <p>Vous trouverez ici des projets réalisés dans le cadre de ma formation ou des projets personnels. Vous pourrez découvrir d’autres réalisations en parcourant mon <a target="_blank" href="https://github.com/QuentinHIL"><em>GitHub</em></a>. J’ai hâte de pouvoir vous partager mes futurs projets. Stay tuned !</p>
             <div id="contprojets">
                 <div id="contprojun">
@@ -168,7 +169,113 @@
                     </div>
                 </div>
             </div>
-            <hr noshade>
+        </div>
+        <hr noshade>
+        <div id="contprojetdesign">
+            <h2>Projets UX/UI</h2>
+            <h3>Montages Photoshop</h3>
+            <!-- gallerie de réalisations photoshop -->
+            <div id="contgallerie">
+                <!-- images et indices -->
+                <div class="diapo fade">
+                    <div class="indice">1 / 10</div>
+                    <img src="images/réalisations photoshop caroussel portfolio/brutalape2.jpg">
+                    <!-- texte affiché sur l'image -->
+                    <div class="texteimage">
+                        caption
+                    </div>
+                </div>
+                <div class="diapo fade">
+                    <div class="indice">2 / 10</div>
+                    <img src="images/réalisations photoshop caroussel portfolio/strawberry_splash2.jpg">
+                    <!-- texte affiché sur l'image -->
+                    <div class="texteimage">
+                        caption
+                    </div>
+                </div>
+                <div class="diapo fade">
+                    <div class="indice">3 / 10</div>
+                    <img src="images/réalisations photoshop caroussel portfolio/montage_ileflottante_caroussel.jpg">
+                    <!-- texte affiché sur l'image -->
+                    <div class="texteimage">
+                        caption
+                    </div>
+                </div>
+                <div class="diapo fade">
+                    <div class="indice">4 / 10</div>
+                    <img src="/images/réalisations photoshop caroussel portfolio/elephantportail.jpg">
+                    <!-- texte affiché sur l'image -->
+                    <div class="texteimage">
+                        caption
+                    </div>
+                </div>
+                <div class="diapo fade">
+                    <div class="indice">5 / 10</div>
+                    <img src="/images/réalisations photoshop caroussel portfolio/vinyleliluzivert.jpg">
+                    <!-- texte affiché sur l'image -->
+                    <div class="texteimage">
+                        caption
+                    </div>
+                </div>
+                <div class="diapo fade">
+                    <div class="indice">6 / 10</div>
+                    <img src="/images/réalisations photoshop caroussel portfolio/demonneonaffichefinal.jpg">
+                    <!-- texte affiché sur l'image -->
+                    <div class="texteimage">
+                        caption
+                    </div>
+                </div>
+                <div class="diapo fade">
+                    <div class="indice">7 / 10</div>
+                    <img src="/images/réalisations photoshop caroussel portfolio/nepal1.jpg">
+                    <!-- texte affiché sur l'image -->
+                    <div class="texteimage">
+                        caption
+                    </div>
+                </div>
+                <div class="diapo fade">
+                    <div class="indice">8 / 10</div>
+                    <img src="/images/réalisations photoshop caroussel portfolio/strawberry_splash1.jpg">
+                    <!-- texte affiché sur l'image -->
+                    <div class="texteimage">
+                        caption
+                    </div>
+                </div>
+                <div class="diapo fade">
+                    <div class="indice">9 / 10</div>
+                    <img src="/images/réalisations photoshop caroussel portfolio/montagerailsortant.jpg">
+                    <!-- texte affiché sur l'image -->
+                    <div class="texteimage">
+                        caption
+                    </div>
+                </div>
+                <div class="diapo fade">
+                    <div class="indice">10 / 10</div>
+                    <img src="/images/réalisations photoshop caroussel portfolio/oeil2.jpg">
+                    <!-- texte affiché sur l'image -->
+                    <div class="texteimage">
+                        caption
+                    </div>
+                </div>
+                <!-- boutons pour passer d'une diapo a l'autre  -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+                <br>
+                <!-- cercle de repere -->
+                <div id="alignecercles">
+                    <span class="cercle" onclick="currentSlide(1)"></span>
+                    <span class="cercle" onclick="currentSlide(2)"></span>
+                    <span class="cercle" onclick="currentSlide(3)"></span>
+                    <span class="cercle" onclick="currentSlide(4)"></span>
+                    <span class="cercle" onclick="currentSlide(5)"></span>
+                    <span class="cercle" onclick="currentSlide(6)"></span>
+                    <span class="cercle" onclick="currentSlide(7)"></span>
+                    <span class="cercle" onclick="currentSlide(8)"></span>
+                    <span class="cercle" onclick="currentSlide(9)"></span>
+                    <span class="cercle" onclick="currentSlide(10)"></span>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="contact">
             <h2>Contact</h2>
@@ -220,8 +327,10 @@
             <hr noshade>
             <span>Touts droits réservés à Quentin HILLAIRET</span>
     </footer>
+    <script src="javascript/_caroussel.js"></script>
     <script src="javascript/_selection.js"></script>
     <script src="javascript/_declencheanimationscroll.js"></script>
     <script src="javascript/_burger.js"></script>
+    
 </body>
 </html>

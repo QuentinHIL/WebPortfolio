@@ -616,30 +616,30 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-#projets h2 {
+#projets #contprojetweb h2 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   font-size: 2.5rem;
   color: #5BA4CC;
   text-align: center;
 }
-#projets p {
+#projets #contprojetweb p {
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
   width: 70%;
   margin: auto;
   text-align: center;
 }
-#projets p a {
+#projets #contprojetweb p a {
   text-decoration: none;
   color: #5BA4CC;
 }
-#projets #contprojets {
+#projets #contprojetweb #contprojets {
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
 }
-#projets #contprojets .projet {
+#projets #contprojetweb #contprojets .projet {
   width: 80%;
   margin: auto;
   margin-top: 5rem;
@@ -648,21 +648,21 @@
   justify-content: space-between;
 }
 @media only screen and (max-width: 1440px) {
-  #projets #contprojets .projet {
+  #projets #contprojetweb #contprojets .projet {
     width: 90%;
     margin: auto;
   }
 }
 @media only screen and (max-width: 1020px) {
-  #projets #contprojets .projet {
+  #projets #contprojetweb #contprojets .projet {
     flex-direction: column;
     align-items: center;
   }
 }
-#projets #contprojets .projet a {
+#projets #contprojetweb #contprojets .projet a {
   color: black;
 }
-#projets #contprojets .projet a:hover {
+#projets #contprojetweb #contprojets .projet a:hover {
   -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
   animation: pulsate-fwd 1.5s ease-in-out infinite both;
 }
@@ -688,41 +688,41 @@
     transform: scale(1);
   }
 }
-#projets #contprojets .projet a img {
+#projets #contprojetweb #contprojets .projet a img {
   border-radius: 0.25rem;
   width: 40rem;
   height: auto;
   box-shadow: 5px 5px 10px;
 }
 @media only screen and (max-width: 1440px) {
-  #projets #contprojets .projet a img {
+  #projets #contprojetweb #contprojets .projet a img {
     width: 35rem;
   }
 }
 @media only screen and (max-width: 760px) {
-  #projets #contprojets .projet a img {
+  #projets #contprojetweb #contprojets .projet a img {
     width: 22rem;
   }
 }
 @media only screen and (max-width: 370px) {
-  #projets #contprojets .projet a img {
+  #projets #contprojetweb #contprojets .projet a img {
     width: 17rem;
   }
 }
-#projets #contprojets .projet .presentationprojet {
+#projets #contprojetweb #contprojets .projet .presentationprojet {
   width: 50%;
   align-items: start;
   display: flex;
   flex-direction: column;
 }
 @media only screen and (max-width: 760px) {
-  #projets #contprojets .projet .presentationprojet {
+  #projets #contprojetweb #contprojets .projet .presentationprojet {
     width: 100%;
     text-align: center;
     margin-top: 2rem;
   }
 }
-#projets #contprojets .projet .presentationprojet h3 {
+#projets #contprojetweb #contprojets .projet .presentationprojet h3 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   margin-top: 0;
@@ -731,7 +731,7 @@
   align-self: center;
   font-size: 2rem;
 }
-#projets #contprojets .projet .presentationprojet p {
+#projets #contprojetweb #contprojets .projet .presentationprojet p {
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
   text-align: center;
@@ -739,12 +739,12 @@
   margin: auto;
 }
 @media only screen and (max-width: 1020px) {
-  #projets #contprojets .projet .presentationprojet p {
+  #projets #contprojetweb #contprojets .projet .presentationprojet p {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 }
-#projets #contprojets .projet .presentationprojet button {
+#projets #contprojetweb #contprojets .projet .presentationprojet button {
   background-color: #5BA4CC;
   border-radius: 0.25rem;
   border-style: none;
@@ -756,7 +756,7 @@
   align-self: center;
 }
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
-  #projets #contprojets .projet .presentationprojet button:hover {
+  #projets #contprojetweb #contprojets .projet .presentationprojet button:hover {
     cursor: pointer;
     -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
     animation: pulsate-fwd 1.5s ease-in-out infinite both;
@@ -784,7 +784,7 @@
     }
   }
 }
-#projets #contprojets .entreegauche {
+#projets #contprojetweb #contprojets .entreegauche {
   -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -808,7 +808,7 @@
     opacity: 1;
   }
 }
-#projets #contprojets .projetinv {
+#projets #contprojetweb #contprojets .projetinv {
   width: 80%;
   margin: auto;
   margin-top: 5rem;
@@ -818,7 +818,7 @@
   justify-content: space-between;
 }
 @media only screen and (max-width: 1440px) {
-  #projets #contprojets .projetinv {
+  #projets #contprojetweb #contprojets .projetinv {
     width: 90%;
     margin: auto;
     margin-top: 5rem;
@@ -826,15 +826,15 @@
   }
 }
 @media only screen and (max-width: 1020px) {
-  #projets #contprojets .projetinv {
+  #projets #contprojetweb #contprojets .projetinv {
     flex-direction: column;
     align-items: center;
   }
 }
-#projets #contprojets .projetinv a {
+#projets #contprojetweb #contprojets .projetinv a {
   color: black;
 }
-#projets #contprojets .projetinv a:hover {
+#projets #contprojetweb #contprojets .projetinv a:hover {
   -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
   animation: pulsate-fwd 1.5s ease-in-out infinite both;
 }
@@ -860,41 +860,41 @@
     transform: scale(1);
   }
 }
-#projets #contprojets .projetinv a img {
+#projets #contprojetweb #contprojets .projetinv a img {
   border-radius: 0.25rem;
   width: 40rem;
   height: auto;
   box-shadow: 5px 5px 10px;
 }
 @media only screen and (max-width: 1440px) {
-  #projets #contprojets .projetinv a img {
+  #projets #contprojetweb #contprojets .projetinv a img {
     width: 35rem;
   }
 }
 @media only screen and (max-width: 760px) {
-  #projets #contprojets .projetinv a img {
+  #projets #contprojetweb #contprojets .projetinv a img {
     width: 22rem;
   }
 }
 @media only screen and (max-width: 370px) {
-  #projets #contprojets .projetinv a img {
+  #projets #contprojetweb #contprojets .projetinv a img {
     width: 17rem;
   }
 }
-#projets #contprojets .projetinv .presentationprojet {
+#projets #contprojetweb #contprojets .projetinv .presentationprojet {
   width: 50%;
   align-items: end;
   display: flex;
   flex-direction: column;
 }
 @media only screen and (max-width: 760px) {
-  #projets #contprojets .projetinv .presentationprojet {
+  #projets #contprojetweb #contprojets .projetinv .presentationprojet {
     width: 100%;
     text-align: center;
     margin-top: 2rem;
   }
 }
-#projets #contprojets .projetinv .presentationprojet h3 {
+#projets #contprojetweb #contprojets .projetinv .presentationprojet h3 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   margin-top: 0;
@@ -903,7 +903,7 @@
   align-self: center;
   font-size: 2rem;
 }
-#projets #contprojets .projetinv .presentationprojet p {
+#projets #contprojetweb #contprojets .projetinv .presentationprojet p {
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
   text-align: center;
@@ -911,12 +911,12 @@
   margin: auto;
 }
 @media only screen and (max-width: 1020px) {
-  #projets #contprojets .projetinv .presentationprojet p {
+  #projets #contprojetweb #contprojets .projetinv .presentationprojet p {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 }
-#projets #contprojets .projetinv .presentationprojet button {
+#projets #contprojetweb #contprojets .projetinv .presentationprojet button {
   background-color: #5BA4CC;
   border-radius: 0.25rem;
   border-style: none;
@@ -929,7 +929,7 @@
   align-self: center;
 }
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
-  #projets #contprojets .projetinv .presentationprojet button:hover {
+  #projets #contprojetweb #contprojets .projetinv .presentationprojet button:hover {
     cursor: pointer;
     -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
     animation: pulsate-fwd 1.5s ease-in-out infinite both;
@@ -957,7 +957,7 @@
     }
   }
 }
-#projets #contprojets .entreedroite {
+#projets #contprojetweb #contprojets .entreedroite {
   -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -987,6 +987,110 @@
   height: 5px;
   border-style: none;
   background-color: #5BA4CC;
+}
+#projets #contprojetdesign h2 {
+  font-family: "Phudu", cursive;
+  color: rgb(40, 39, 39);
+  font-size: 2.5rem;
+  color: #5BA4CC;
+  text-align: center;
+}
+#projets #contprojetdesign h3 {
+  font-family: "Phudu", cursive;
+  color: rgb(40, 39, 39);
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #5BA4CC;
+  text-align: center;
+  font-size: 2rem;
+}
+#projets #contprojetdesign #contgallerie {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+#projets #contprojetdesign #contgallerie .diapo {
+  display: none;
+}
+#projets #contprojetdesign #contgallerie .diapo img {
+  max-width: 70%;
+  max-height: 90vh;
+  display: block;
+  margin: auto;
+}
+#projets #contprojetdesign #contgallerie .diapo .texteimage {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+#projets #contprojetdesign #contgallerie .diapo .indice {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+#projets #contprojetdesign #contgallerie .prev, #projets #contprojetdesign #contgallerie .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #5BA4CC;
+  font-weight: bold;
+  font-size: 3rem;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+#projets #contprojetdesign #contgallerie .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+#projets #contprojetdesign #contgallerie .prev:hover, #projets #contprojetdesign #contgallerie .next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#projets #contprojetdesign #contgallerie .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#projets #contprojetdesign #contgallerie #alignecercles {
+  text-align: center;
+}
+#projets #contprojetdesign #contgallerie #alignecercles .cercle {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #5BA4CC;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#projets #contprojetdesign #contgallerie #alignecercles .active, #projets #contprojetdesign #contgallerie #alignecercles .cercle:hover {
+  background-color: #028090;
 }
 
 #contact h2 {
