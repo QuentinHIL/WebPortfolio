@@ -207,6 +207,7 @@
             position: relative;
             margin: auto;
             @include espacevertical;
+            margin-top: 2rem;
             // on cache les images par défaut
             .diapo{
                 display: none;
