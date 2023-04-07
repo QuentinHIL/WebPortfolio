@@ -50,12 +50,13 @@
                     @media only screen and (max-width:760px){
                         width: 50%;
                     }
-                    @media only screen and (min-width:430px), only screen and (max-width: infinite){
-                        button:hover{
-                            cursor: pointer;
-                            @include pulse;
-                        }      
-                    }
+                }
+                @media only screen and (min-width:430px), only screen and (max-width: infinite){
+                    button:hover{
+                        cursor: pointer;
+                        //@include pulse;
+                        background-color: white;
+                    }     
                 }
             }
         }
@@ -130,7 +131,8 @@
                 }
                 .competence:hover{
                     cursor: pointer;
-                    @include pulse;
+                    //@include pulse;
+                    background-color: white;
                 }
             }
         }

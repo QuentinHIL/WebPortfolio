@@ -29,7 +29,9 @@
 @mixin stylebouton{
   background-color: $prim;
   border-radius: 0.25rem;
-  border-style: none;
+  border-style: solid;
+  border-color: $prim;
+  border-width: 2px;
   width: 25%;
 }
 @mixin animin{

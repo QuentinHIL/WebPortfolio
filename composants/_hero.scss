@@ -20,7 +20,7 @@
         a{
             @media only screen and (min-width:430px), only screen and (max-width: infinite){
                 &:hover{
-                    @include pulse;
+                    //@include pulse;
                     cursor: pointer;
                 }    
             }
@@ -55,19 +55,21 @@
                         flex-direction: column;
                         align-items: center;
                     }
-                    li{
-                        @media only screen and (min-width:430px), only screen and (max-width: infinite){
-                            button:hover{
-                                cursor: pointer;
-                                @include pulse;
-                            }      
-                        }
+                    li{ 
+                        transition: transform 300ms ease-in-out;     
                         a{
                             @include titre;
                             font-size: 1.25rem;
                             color: $text;
                             scroll-behavior: smooth;
                             text-decoration: none;
+                        }
+                    }
+                    @media only screen and (min-width:430px), only screen and (max-width: infinite){
+                        li:hover{
+                            cursor: pointer;
+                            //@include pulse;
+                            transform: scale(1.25)
                         }
                     }
                 }

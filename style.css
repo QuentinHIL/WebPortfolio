@@ -26,31 +26,7 @@
 }
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
   #hero header a:hover {
-    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-    animation: pulsate-fwd 1.5s ease-in-out infinite both;
     cursor: pointer;
-  }
-  @-webkit-keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  @keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
   }
 }
 #hero header a img {
@@ -132,34 +108,8 @@
     align-items: center;
   }
 }
-@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
-  #hero header #contnavburger #contnav #nav li button:hover {
-    cursor: pointer;
-    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-    animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  }
-  @-webkit-keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  @keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+#hero header #contnavburger #contnav #nav li {
+  transition: transform 300ms ease-in-out;
 }
 #hero header #contnavburger #contnav #nav li a {
   font-family: "Phudu", cursive;
@@ -168,6 +118,12 @@
   color: rgb(40, 39, 39);
   scroll-behavior: smooth;
   text-decoration: none;
+}
+@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
+  #hero header #contnavburger #contnav #nav li:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+  }
 }
 #hero header #contnavburger #boutonburger {
   justify-content: flex-end;
@@ -373,7 +329,9 @@
   margin-top: 2rem;
   background-color: #5BA4CC;
   border-radius: 0.25rem;
-  border-style: none;
+  border-style: solid;
+  border-color: #5BA4CC;
+  border-width: 2px;
   width: 25%;
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
@@ -386,32 +344,9 @@
   }
 }
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
-  #apropos #monparcours #qsj #contboutoncv button button:hover {
+  #apropos #monparcours #qsj #contboutoncv button:hover {
     cursor: pointer;
-    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-    animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  }
-  @-webkit-keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  @keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
+    background-color: white;
   }
 }
 #apropos #monparcours #cursus {
@@ -489,7 +424,9 @@
   height: 5rem;
   background-color: #5BA4CC;
   border-radius: 0.25rem;
-  border-style: none;
+  border-style: solid;
+  border-color: #5BA4CC;
+  border-width: 2px;
   width: 25%;
 }
 @media only screen and (max-width: 768px) {
@@ -505,30 +442,7 @@
 }
 #apropos #messavoirs #contboutons .boutons .competence:hover {
   cursor: pointer;
-  -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  animation: pulsate-fwd 1.5s ease-in-out infinite both;
-}
-@-webkit-keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+  background-color: white;
 }
 #apropos #messavoirs #contcartes .cartes {
   display: none;
@@ -747,7 +661,9 @@
 #projets #contprojetweb #contprojets .projet .presentationprojet button {
   background-color: #5BA4CC;
   border-radius: 0.25rem;
-  border-style: none;
+  border-style: solid;
+  border-color: #5BA4CC;
+  border-width: 2px;
   width: 25%;
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
@@ -758,30 +674,7 @@
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
   #projets #contprojetweb #contprojets .projet .presentationprojet button:hover {
     cursor: pointer;
-    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-    animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  }
-  @-webkit-keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  @keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
+    background-color: white;
   }
 }
 #projets #contprojetweb #contprojets .entreegauche {
@@ -919,7 +812,9 @@
 #projets #contprojetweb #contprojets .projetinv .presentationprojet button {
   background-color: #5BA4CC;
   border-radius: 0.25rem;
-  border-style: none;
+  border-style: solid;
+  border-color: #5BA4CC;
+  border-width: 2px;
   width: 25%;
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
@@ -931,30 +826,7 @@
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
   #projets #contprojetweb #contprojets .projetinv .presentationprojet button:hover {
     cursor: pointer;
-    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-    animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  }
-  @-webkit-keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  @keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
+    background-color: white;
   }
 }
 #projets #contprojetweb #contprojets .entreedroite {
@@ -1005,31 +877,46 @@
   font-size: 2rem;
 }
 #projets #contprojetdesign #contgallerie {
-  max-width: 1000px;
+  max-width: 80%;
   position: relative;
   margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 #projets #contprojetdesign #contgallerie .diapo {
   display: none;
 }
+#projets #contprojetdesign #contgallerie .diapo input[type=checkbox] {
+  display: none;
+}
+#projets #contprojetdesign #contgallerie .diapo input[type=checkbox]:checked ~ label > img {
+  transform: scale(2);
+  cursor: zoom-out;
+}
 #projets #contprojetdesign #contgallerie .diapo img {
-  max-width: 70%;
+  max-width: 80%;
   max-height: 90vh;
   display: block;
   margin: auto;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
 }
 #projets #contprojetdesign #contgallerie .diapo .texteimage {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  font-size: 1.5rem;
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
+  color: #5BA4CC;
+  margin-top: 1.5rem;
 }
 #projets #contprojetdesign #contgallerie .diapo .indice {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  color: #5BA4CC;
+  font-size: 1rem;
   position: absolute;
   top: 0;
+  right: 10%;
 }
 #projets #contprojetdesign #contgallerie .prev, #projets #contprojetdesign #contgallerie .next {
   cursor: pointer;
@@ -1057,8 +944,8 @@
 #projets #contprojetdesign #contgallerie .fade {
   -webkit-animation-name: fade;
           animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 @-webkit-keyframes fade {
   from {
@@ -1178,7 +1065,9 @@
 #contact form #boutoncontact button {
   background-color: #5BA4CC;
   border-radius: 0.25rem;
-  border-style: none;
+  border-style: solid;
+  border-color: #5BA4CC;
+  border-width: 2px;
   width: 25%;
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
@@ -1212,30 +1101,7 @@
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
   #contact form #boutoncontact button:hover {
     cursor: pointer;
-    -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-    animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  }
-  @-webkit-keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  @keyframes pulsate-fwd {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
+    background-color: white;
   }
 }
 

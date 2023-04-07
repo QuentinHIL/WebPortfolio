@@ -89,7 +89,8 @@
                     @media only screen and (min-width:430px), only screen and (max-width: infinite){
                         button:hover{
                             cursor: pointer;
-                            @include pulse;
+                            background-color: white;
+                            //@include pulse;
                         }      
                     }
                 }
@@ -169,7 +170,8 @@
                     @media only screen and (min-width:430px), only screen and (max-width: infinite){
                         button:hover{
                             cursor: pointer;
-                            @include pulse;
+                            background-color: white;
+                            //@include pulse;
                         }      
                     }   
                 }
@@ -201,32 +203,45 @@
         }
         #contgallerie{
             // position du conteneur pour placer les boutons avant arrière
-            max-width: 1000px;
+            max-width: 80%;
             position: relative;
             margin: auto;
+            @include espacevertical;
             // on cache les images par défaut
             .diapo{
                 display: none;
+                input[type=checkbox] {
+                    display: none;
+                }
+                input[type=checkbox]:checked ~ label > img {
+                    transform: scale(2);
+                    cursor: zoom-out;
+                  }
                 img{
-                    max-width: 70%;
+                    max-width: 80%;
                     max-height: 90vh;
                     display: block;
                     margin: auto;
+                    transition: transform 0.25s ease;
+                    cursor: zoom-in;
                 }
                  // conteneur du texte de l'image
                 .texteimage {
-                text-align: center;
-                background-color: #222;
-                padding: 2px 16px;
-                color: white;
+                    @include texte;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    color: $prim;
+                    margin-top: 1.5rem;
                 }
                 // position et affichage de l'indice de l'image
                 .indice {
-                color: #f2f2f2;
-                font-size: 12px;
-                padding: 8px 12px;
-                position: absolute;
-                top: 0;
+                    @include texte;
+                    color: $prim;
+                    font-size: 1rem;
+                    position: absolute;
+                    top: 0;
+                    right:10%;
+
                 }
             }
             // boutons avant arrière
@@ -256,7 +271,7 @@
             // animation fade
             .fade {
                 animation-name: fade;
-                animation-duration: 1.5s;
+                animation-duration: 2s;
               }
               
               @keyframes fade {
