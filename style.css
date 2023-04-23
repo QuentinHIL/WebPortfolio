@@ -873,6 +873,12 @@
   display: flex;
   justify-content: space-evenly;
 }
+@media only screen and (max-width: 992px) {
+  #projets #contprojetdesign #contboutonsuxui .boutonsuxui {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #projets #contprojetdesign #contboutonsuxui .boutonsuxui .realuxui {
   background-color: #5BA4CC;
   border-radius: 0.25rem;
@@ -880,15 +886,22 @@
   border-color: #5BA4CC;
   border-width: 2px;
   width: 25%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-size: 1.5rem;
   height: 5rem;
 }
-#projets #contprojetdesign #contboutonsuxui .boutonsuxui .realuxui:hover {
-  background-color: white;
+@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
+  #projets #contprojetdesign #contboutonsuxui .boutonsuxui .realuxui:hover {
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #projets #contprojetdesign #contboutonsuxui .boutonsuxui .realuxui {
+    width: 80%;
+  }
 }
 #projets #contprojetdesign #contcarroussels .carroussels {
   display: none;
