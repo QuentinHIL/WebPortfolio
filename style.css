@@ -867,16 +867,66 @@
   color: #5BA4CC;
   text-align: center;
 }
-#projets #contprojetdesign h3 {
-  font-family: "Phudu", cursive;
-  color: rgb(40, 39, 39);
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #5BA4CC;
-  text-align: center;
-  font-size: 2rem;
+#projets #contprojetdesign #contboutonsuxui .boutonsuxui {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
 }
-#projets #contprojetdesign #contgallerie {
+#projets #contprojetdesign #contboutonsuxui .boutonsuxui .realuxui {
+  background-color: #5BA4CC;
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-color: #5BA4CC;
+  border-width: 2px;
+  width: 25%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  font-size: 1.5rem;
+  height: 5rem;
+}
+#projets #contprojetdesign #contboutonsuxui .boutonsuxui .realuxui:hover {
+  background-color: white;
+}
+#projets #contprojetdesign #contcarroussels .carroussels {
+  display: none;
+}
+#projets #contprojetdesign #contcarroussels .show {
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  display: block;
+}
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+#projets #contprojetdesign #contcarroussels .carroussels {
   max-width: 80%;
   position: relative;
   margin: auto;
@@ -884,42 +934,44 @@
   margin-bottom: 5rem;
   margin-top: 2rem;
 }
-#projets #contprojetdesign #contgallerie .diapo {
-  display: none;
-}
-#projets #contprojetdesign #contgallerie .diapo input[type=checkbox] {
-  display: none;
-}
-#projets #contprojetdesign #contgallerie .diapo input[type=checkbox]:checked ~ label > img {
-  transform: scale(2);
-  cursor: zoom-out;
-}
-#projets #contprojetdesign #contgallerie .diapo img {
-  max-width: 80%;
-  max-height: 90vh;
-  display: block;
-  margin: auto;
-  transition: transform 0.25s ease;
-  cursor: zoom-in;
-}
-#projets #contprojetdesign #contgallerie .diapo .texteimage {
-  font-family: "Varela Round", sans-serif;
-  color: rgb(40, 39, 39);
-  font-size: 1.5rem;
+#projets #contprojetdesign #contcarroussels .carroussels h3 {
   text-align: center;
-  color: #5BA4CC;
-  margin-top: 1.5rem;
-}
-#projets #contprojetdesign #contgallerie .diapo .indice {
-  font-family: "Varela Round", sans-serif;
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
+  font-size: 2rem;
   color: #5BA4CC;
-  font-size: 1rem;
-  position: absolute;
-  top: 0;
-  right: 10%;
 }
-#projets #contprojetdesign #contgallerie .prev, #projets #contprojetdesign #contgallerie .next {
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+#projets #contprojetdesign #contcarroussels .carroussels .prev, #projets #contprojetdesign #contcarroussels .carroussels .next {
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -935,14 +987,14 @@
        user-select: none;
   -webkit-user-select: none;
 }
-#projets #contprojetdesign #contgallerie .next {
+#projets #contprojetdesign #contcarroussels .carroussels .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-#projets #contprojetdesign #contgallerie .prev:hover, #projets #contprojetdesign #contgallerie .next:hover {
+#projets #contprojetdesign #contcarroussels .carroussels .prev:hover, #projets #contprojetdesign #contcarroussels .carroussels .next:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
-#projets #contprojetdesign #contgallerie .fade {
+#projets #contprojetdesign #contcarroussels .carroussels .fade {
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-duration: 2s;
@@ -964,10 +1016,45 @@
     opacity: 1;
   }
 }
-#projets #contprojetdesign #contgallerie #alignecercles {
+#projets #contprojetdesign #contcarroussels .carroussels #alignecercles {
   text-align: center;
 }
-#projets #contprojetdesign #contgallerie #alignecercles .cercle {
+#projets #contprojetdesign #contcarroussels #photoshop .diapo {
+  display: none;
+}
+#projets #contprojetdesign #contcarroussels #photoshop .diapo input[type=checkbox] {
+  display: none;
+}
+#projets #contprojetdesign #contcarroussels #photoshop .diapo input[type=checkbox]:checked ~ label > img {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+#projets #contprojetdesign #contcarroussels #photoshop .diapo img {
+  max-width: 80%;
+  max-height: 90vh;
+  display: block;
+  margin: auto;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+#projets #contprojetdesign #contcarroussels #photoshop .diapo .texteimage {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  font-size: 1.5rem;
+  text-align: center;
+  color: #5BA4CC;
+  margin-top: 1.5rem;
+}
+#projets #contprojetdesign #contcarroussels #photoshop .diapo .indice {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  color: #5BA4CC;
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+#projets #contprojetdesign #contcarroussels #photoshop .cercle {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -977,7 +1064,55 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-#projets #contprojetdesign #contgallerie #alignecercles .active, #projets #contprojetdesign #contgallerie #alignecercles .cercle:hover {
+#projets #contprojetdesign #contcarroussels #photoshop .active, #projets #contprojetdesign #contcarroussels #photoshop .cercle:hover {
+  background-color: #028090;
+}
+#projets #contprojetdesign #contcarroussels #illustrator .diapoillu {
+  display: none;
+}
+#projets #contprojetdesign #contcarroussels #illustrator .diapoillu input[type=checkbox] {
+  display: none;
+}
+#projets #contprojetdesign #contcarroussels #illustrator .diapoillu input[type=checkbox]:checked ~ label > img {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+#projets #contprojetdesign #contcarroussels #illustrator .diapoillu img {
+  max-width: 80%;
+  max-height: 90vh;
+  display: block;
+  margin: auto;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+#projets #contprojetdesign #contcarroussels #illustrator .diapoillu .texteimage {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  font-size: 1.5rem;
+  text-align: center;
+  color: #5BA4CC;
+  margin-top: 1.5rem;
+}
+#projets #contprojetdesign #contcarroussels #illustrator .diapoillu .indice {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  color: #5BA4CC;
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+#projets #contprojetdesign #contcarroussels #illustrator .cercleillu {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #5BA4CC;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#projets #contprojetdesign #contcarroussels #illustrator .active, #projets #contprojetdesign #contcarroussels #illustrator .cercleillu:hover {
   background-color: #028090;
 }
 
