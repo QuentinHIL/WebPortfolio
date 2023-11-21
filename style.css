@@ -11,11 +11,11 @@
   display: flex;
 }
 #hero header {
-  width: 80%;
+  width: 50%;
   margin: auto;
   margin-top: 0;
   margin-bottom: 0;
-  width: 99%;
+  margin-left: 25%;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -173,11 +173,13 @@
   }
 }
 #hero #presentation #textepresentation h1 {
+  width: 60%;
+  margin: auto;
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   font-size: 3rem;
   color: rgb(40, 39, 39);
-  text-align: center;
+  margin-bottom: 2rem;
 }
 @media only screen and (max-width: 760px) {
   #hero #presentation #textepresentation h1 {
@@ -190,7 +192,6 @@
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
   color: rgb(40, 39, 39);
-  text-align: center;
 }
 @media only screen and (max-width: 760px) {
   #hero #presentation #textepresentation p {
