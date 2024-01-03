@@ -667,6 +667,7 @@
   width: 20%;
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
+  width: 40%;
   height: 3rem;
   font-size: 1.25rem;
   align-self: center;
@@ -853,6 +854,330 @@
     opacity: 1;
   }
 }
+#projets #contmaquettes {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#projets #contmaquettes h2 {
+  font-family: "Phudu", cursive;
+  color: rgb(40, 39, 39);
+  font-size: 2.5rem;
+  color: #5BA4CC;
+  text-align: center;
+}
+#projets #contmaquettes p {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+#projets #contmaquettes #contprojetmaquettes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+#projets #contmaquettes #contprojetmaquettes .projet {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1440px) {
+  #projets #contmaquettes #contprojetmaquettes .projet {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  #projets #contmaquettes #contprojetmaquettes .projet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .projet a {
+  color: black;
+}
+#projets #contmaquettes #contprojetmaquettes .projet a:hover {
+  -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
+  animation: pulsate-fwd 1.5s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .projet a img {
+  border-radius: 0.25rem;
+  width: 40rem;
+  height: auto;
+  box-shadow: 5px 5px 10px;
+}
+@media only screen and (max-width: 1440px) {
+  #projets #contmaquettes #contprojetmaquettes .projet a img {
+    width: 35rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  #projets #contmaquettes #contprojetmaquettes .projet a img {
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  #projets #contmaquettes #contprojetmaquettes .projet a img {
+    width: 17rem;
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .projet .presentationprojet {
+  width: 50%;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 760px) {
+  #projets #contmaquettes #contprojetmaquettes .projet .presentationprojet {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .projet .presentationprojet h3 {
+  font-family: "Phudu", cursive;
+  color: rgb(40, 39, 39);
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #5BA4CC;
+  align-self: center;
+  font-size: 2rem;
+}
+#projets #contmaquettes #contprojetmaquettes .projet .presentationprojet p {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+@media only screen and (max-width: 1020px) {
+  #projets #contmaquettes #contprojetmaquettes .projet .presentationprojet p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .projet .presentationprojet button {
+  background-color: #5BA4CC;
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-color: #5BA4CC;
+  border-width: 2px;
+  width: 20%;
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  width: 40%;
+  height: 3rem;
+  font-size: 1.25rem;
+  align-self: center;
+}
+@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
+  #projets #contmaquettes #contprojetmaquettes .projet .presentationprojet button:hover {
+    cursor: pointer;
+    background-color: white;
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .entreegauche {
+  -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .projetinv {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1440px) {
+  #projets #contmaquettes #contprojetmaquettes .projetinv {
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  #projets #contmaquettes #contprojetmaquettes .projetinv {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .projetinv a {
+  color: black;
+}
+#projets #contmaquettes #contprojetmaquettes .projetinv a:hover {
+  -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
+  animation: pulsate-fwd 1.5s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .projetinv a img {
+  border-radius: 0.25rem;
+  width: 40rem;
+  height: auto;
+  box-shadow: 5px 5px 10px;
+}
+@media only screen and (max-width: 1440px) {
+  #projets #contmaquettes #contprojetmaquettes .projetinv a img {
+    width: 35rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  #projets #contmaquettes #contprojetmaquettes .projetinv a img {
+    width: 22rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  #projets #contmaquettes #contprojetmaquettes .projetinv a img {
+    width: 17rem;
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .projetinv .presentationprojet {
+  width: 50%;
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 760px) {
+  #projets #contmaquettes #contprojetmaquettes .projetinv .presentationprojet {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .projetinv .presentationprojet h3 {
+  font-family: "Phudu", cursive;
+  color: rgb(40, 39, 39);
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #5BA4CC;
+  align-self: center;
+  font-size: 2rem;
+}
+#projets #contmaquettes #contprojetmaquettes .projetinv .presentationprojet p {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+@media only screen and (max-width: 1020px) {
+  #projets #contmaquettes #contprojetmaquettes .projetinv .presentationprojet p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .projetinv .presentationprojet button {
+  background-color: #5BA4CC;
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-color: #5BA4CC;
+  border-width: 2px;
+  width: 20%;
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  width: 40%;
+  height: 3rem;
+  font-size: 1.25rem;
+  align-self: center;
+}
+@media only screen and (min-width: 430px), only screen and (max-width: infinite) {
+  #projets #contmaquettes #contprojetmaquettes .projetinv .presentationprojet button:hover {
+    cursor: pointer;
+    background-color: white;
+  }
+}
+#projets #contmaquettes #contprojetmaquettes .entreedroite {
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 #projets hr {
   width: 80%;
   margin: auto;
@@ -860,12 +1185,27 @@
   border-style: none;
   background-color: #5BA4CC;
 }
+#projets #contprojetdesign {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
 #projets #contprojetdesign h2 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   font-size: 2.5rem;
   color: #5BA4CC;
   text-align: center;
+}
+#projets #contprojetdesign p {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(40, 39, 39);
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+#projets #contprojetdesign p a {
+  text-decoration: none;
+  color: #5BA4CC;
 }
 #projets #contprojetdesign #contboutonsuxui .boutonsuxui {
   width: 80%;
