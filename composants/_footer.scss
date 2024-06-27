@@ -31,6 +31,9 @@ footer{
                 a{
                     text-decoration: none;
                     color: $text;
+                    em{
+                        color: $prim;
+                    }
                 }
             }
             #infoscontact{

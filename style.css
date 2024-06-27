@@ -134,7 +134,7 @@
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   font-size: 1.25rem;
-  color: rgb(40, 39, 39);
+  color: #3417E1;
   scroll-behavior: smooth;
   text-decoration: none;
 }
@@ -345,7 +345,7 @@
 }
 @media only screen and (max-width: 760px) {
   #apropos #monparcours #qsj #contboutoncv button {
-    width: 50%;
+    width: 60%;
   }
 }
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
@@ -1666,6 +1666,9 @@ footer #footersup #presentationfooter p {
 footer #footersup #presentationfooter p a {
   text-decoration: none;
   color: rgb(40, 39, 39);
+}
+footer #footersup #presentationfooter p a em {
+  color: #3417E1;
 }
 footer #footersup #presentationfooter #infoscontact {
   display: flex;
