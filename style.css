@@ -443,7 +443,7 @@
 }
 @media only screen and (max-width: 600px) {
   #apropos #messavoirs #contboutons .boutons .competence {
-    width: 60%;
+    width: 100%;
   }
 }
 #apropos #messavoirs #contboutons .boutons .competence:hover {
