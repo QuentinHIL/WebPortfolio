@@ -34,6 +34,7 @@
             align-items: center;
             justify-content: flex-end;
             width:40%;
+            @include glissedroite;
             #contnav{
                 width: 100%;
                 @media only screen and (max-width:768px){
