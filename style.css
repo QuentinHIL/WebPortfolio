@@ -5,9 +5,8 @@
 #hero {
   z-index: 0;
   position: relative;
-  height: 95vh;
-  background-image: url("images/blueback.jpg");
-  background-attachment: fixed;
+  height: 100vh;
+  background-color: #FFE406;
   display: flex;
 }
 #hero header {
@@ -32,10 +31,8 @@
 #hero header a img {
   -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  width: 7rem;
+  width: 10rem;
   height: auto;
-  border-radius: 50%;
-  background: #5BA4CC;
 }
 @-webkit-keyframes slide-in-left {
   0% {
@@ -139,7 +136,8 @@
 }
 #hero #presentation {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 @media only screen and (max-width: 760px) {
   #hero #presentation {
@@ -151,6 +149,7 @@
   -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   width: 80%;
+  margin: auto;
 }
 @-webkit-keyframes slide-in-left {
   0% {
@@ -184,7 +183,11 @@
 @media only screen and (max-width: 760px) {
   #hero #presentation #textepresentation h1 {
     font-size: 2rem;
+    width: 100%;
   }
+}
+#hero #presentation #textepresentation h1 em {
+  color: #3417E1;
 }
 #hero #presentation #textepresentation p {
   width: 70%;
@@ -202,13 +205,15 @@
   text-decoration: none;
   color: rgb(40, 39, 39);
 }
+#hero #presentation #textepresentation p a em {
+  color: #3417E1;
+}
 #hero #presentation #photopresentation {
+  margin-top: -20%;
   -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  width: 25%;
   display: flex;
-  justify-content: flex-end;
-  align-self: flex-end;
+  justify-content: end;
 }
 @-webkit-keyframes slide-in-right {
   0% {
@@ -230,39 +235,16 @@
     opacity: 1;
   }
 }
-#hero #presentation #photopresentation #photo {
+#hero #presentation #photopresentation a {
+  width: 20%;
+}
+#hero #presentation #photopresentation a #photo {
   max-width: 100%;
   height: auto;
 }
 @media only screen and (max-width: 760px) {
-  #hero #presentation #photopresentation #photo {
+  #hero #presentation #photopresentation a #photo {
     display: none;
-  }
-}
-#hero #presentation #photopresentation #photo:hover {
-  -webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
-  animation: pulsate-fwd 1.5s ease-in-out infinite both;
-}
-@-webkit-keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes pulsate-fwd {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 
@@ -274,7 +256,7 @@
   text-align: center;
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
-  color: #5BA4CC;
+  color: #3417E1;
   font-size: 2.5rem;
 }
 #apropos #monparcours {
@@ -299,7 +281,7 @@
 #apropos #monparcours #qsj h3 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
-  color: #5BA4CC;
+  color: #3417E1;
   font-size: 2rem;
 }
 #apropos #monparcours #qsj p {
@@ -315,7 +297,7 @@
 }
 #apropos #monparcours #qsj p a {
   text-decoration: none;
-  color: #5BA4CC;
+  color: #3417E1;
 }
 #apropos #monparcours #qsj #contboutoncv {
   display: flex;
@@ -328,16 +310,16 @@
 }
 #apropos #monparcours #qsj #contboutoncv button {
   margin-top: 2rem;
-  background-color: #5BA4CC;
-  border-radius: 0.25rem;
-  border-style: solid;
-  border-color: #5BA4CC;
-  border-width: 2px;
-  width: 20%;
-  font-family: "Varela Round", sans-serif;
+  background-color: #FFE406;
+  border-radius: 5rem;
+  border-style: none;
+  transition: 0.5s;
+  font-family: "Phudu", cursive;
+  color: rgb(40, 39, 39);
   color: rgb(40, 39, 39);
   height: 3rem;
   font-size: 1.25rem;
+  width: 70%;
 }
 @media only screen and (max-width: 760px) {
   #apropos #monparcours #qsj #contboutoncv button {
@@ -347,7 +329,8 @@
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
   #apropos #monparcours #qsj #contboutoncv button:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: #3417E1;
+    color: white;
   }
 }
 #apropos #monparcours #cursus {
@@ -363,7 +346,7 @@
 #apropos #monparcours #cursus h3 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
-  color: #5BA4CC;
+  color: #3417E1;
   font-size: 2rem;
 }
 #apropos #monparcours #cursus ul {
@@ -393,7 +376,7 @@
 #apropos #messavoirs h3 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
-  color: #5BA4CC;
+  color: #3417E1;
   font-size: 2rem;
   text-align: center;
 }
@@ -422,12 +405,13 @@
   align-items: center;
   font-size: 1.5rem;
   height: 5rem;
-  background-color: #5BA4CC;
-  border-radius: 0.25rem;
-  border-style: solid;
-  border-color: #5BA4CC;
-  border-width: 2px;
-  width: 20%;
+  background-color: #FFE406;
+  border-radius: 5rem;
+  border-style: none;
+  transition: 0.5s;
+  font-family: "Phudu", cursive;
+  color: rgb(40, 39, 39);
+  width: 22%;
 }
 @media only screen and (max-width: 768px) {
   #apropos #messavoirs #contboutons .boutons .competence {
@@ -442,7 +426,8 @@
 }
 #apropos #messavoirs #contboutons .boutons .competence:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: #3417E1;
+  color: white;
 }
 #apropos #messavoirs #contcartes .cartes {
   display: none;
@@ -451,7 +436,7 @@
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   font-size: 1.75rem;
-  color: #5BA4CC;
+  color: #3417E1;
   text-align: center;
 }
 #apropos #messavoirs #contcartes .cartes .contenu ul {
@@ -470,7 +455,7 @@
   width: fit-content;
   border-radius: 0.2rem;
   text-align: center;
-  background-color: #C1DDEB;
+  background-color: #FFE406;
   margin-top: 1rem;
 }
 #apropos #messavoirs #contcartes #dev {
@@ -523,7 +508,7 @@
   margin: auto;
   height: 5px;
   border-style: none;
-  background-color: #5BA4CC;
+  background-color: #3417E1;
 }
 
 #projets {
@@ -534,7 +519,7 @@
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   font-size: 2.5rem;
-  color: #5BA4CC;
+  color: #3417E1;
   text-align: center;
 }
 #projets #contprojetweb p {
@@ -546,7 +531,7 @@
 }
 #projets #contprojetweb p a {
   text-decoration: none;
-  color: #5BA4CC;
+  color: #3417E1;
 }
 #projets #contprojetweb #contprojets {
   display: flex;
@@ -641,7 +626,7 @@
   color: rgb(40, 39, 39);
   margin-top: 0;
   margin-bottom: 0;
-  color: #5BA4CC;
+  color: #3417E1;
   align-self: center;
   font-size: 2rem;
 }
@@ -659,13 +644,11 @@
   }
 }
 #projets #contprojetweb #contprojets .projet .presentationprojet button {
-  background-color: #5BA4CC;
-  border-radius: 0.25rem;
-  border-style: solid;
-  border-color: #5BA4CC;
-  border-width: 2px;
-  width: 20%;
-  font-family: "Varela Round", sans-serif;
+  background-color: #FFE406;
+  border-radius: 5rem;
+  border-style: none;
+  transition: 0.5s;
+  font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   width: 40%;
   height: 3rem;
@@ -675,7 +658,8 @@
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
   #projets #contprojetweb #contprojets .projet .presentationprojet button:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: #3417E1;
+    color: white;
   }
 }
 #projets #contprojetweb #contprojets .entreegauche {
@@ -793,7 +777,7 @@
   color: rgb(40, 39, 39);
   margin-top: 0;
   margin-bottom: 0;
-  color: #5BA4CC;
+  color: #3417E1;
   align-self: center;
   font-size: 2rem;
 }
@@ -811,13 +795,11 @@
   }
 }
 #projets #contprojetweb #contprojets .projetinv .presentationprojet button {
-  background-color: #5BA4CC;
-  border-radius: 0.25rem;
-  border-style: solid;
-  border-color: #5BA4CC;
-  border-width: 2px;
-  width: 20%;
-  font-family: "Varela Round", sans-serif;
+  background-color: #FFE406;
+  border-radius: 5rem;
+  border-style: none;
+  transition: 0.5s;
+  font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   width: 40%;
   height: 3rem;
@@ -827,7 +809,8 @@
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
   #projets #contprojetweb #contprojets .projetinv .presentationprojet button:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: #3417E1;
+    color: white;
   }
 }
 #projets #contprojetweb #contprojets .entreedroite {
@@ -862,7 +845,7 @@
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   font-size: 2.5rem;
-  color: #5BA4CC;
+  color: #3417E1;
   text-align: center;
 }
 #projets #contmaquettes p {
@@ -965,7 +948,7 @@
   color: rgb(40, 39, 39);
   margin-top: 0;
   margin-bottom: 0;
-  color: #5BA4CC;
+  color: #3417E1;
   align-self: center;
   font-size: 2rem;
 }
@@ -983,13 +966,11 @@
   }
 }
 #projets #contmaquettes #contprojetmaquettes .projet .presentationprojet button {
-  background-color: #5BA4CC;
-  border-radius: 0.25rem;
-  border-style: solid;
-  border-color: #5BA4CC;
-  border-width: 2px;
-  width: 20%;
-  font-family: "Varela Round", sans-serif;
+  background-color: #FFE406;
+  border-radius: 5rem;
+  border-style: none;
+  transition: 0.5s;
+  font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   width: 40%;
   height: 3rem;
@@ -999,7 +980,8 @@
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
   #projets #contmaquettes #contprojetmaquettes .projet .presentationprojet button:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: #3417E1;
+    color: white;
   }
 }
 #projets #contmaquettes #contprojetmaquettes .entreegauche {
@@ -1117,7 +1099,7 @@
   color: rgb(40, 39, 39);
   margin-top: 0;
   margin-bottom: 0;
-  color: #5BA4CC;
+  color: #3417E1;
   align-self: center;
   font-size: 2rem;
 }
@@ -1135,13 +1117,11 @@
   }
 }
 #projets #contmaquettes #contprojetmaquettes .projetinv .presentationprojet button {
-  background-color: #5BA4CC;
-  border-radius: 0.25rem;
-  border-style: solid;
-  border-color: #5BA4CC;
-  border-width: 2px;
-  width: 20%;
-  font-family: "Varela Round", sans-serif;
+  background-color: #FFE406;
+  border-radius: 5rem;
+  border-style: none;
+  transition: 0.5s;
+  font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   width: 40%;
   height: 3rem;
@@ -1151,7 +1131,8 @@
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
   #projets #contmaquettes #contprojetmaquettes .projetinv .presentationprojet button:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: #3417E1;
+    color: white;
   }
 }
 #projets #contmaquettes #contprojetmaquettes .entreedroite {
@@ -1183,7 +1164,7 @@
   margin: auto;
   height: 5px;
   border-style: none;
-  background-color: #5BA4CC;
+  background-color: #3417E1;
 }
 #projets #contprojetdesign {
   margin-top: 5rem;
@@ -1193,7 +1174,7 @@
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   font-size: 2.5rem;
-  color: #5BA4CC;
+  color: #3417E1;
   text-align: center;
 }
 #projets #contprojetdesign p {
@@ -1205,7 +1186,7 @@
 }
 #projets #contprojetdesign p a {
   text-decoration: none;
-  color: #5BA4CC;
+  color: #3417E1;
 }
 #projets #contprojetdesign #contboutonsuxui .boutonsuxui {
   width: 80%;
@@ -1220,13 +1201,11 @@
   }
 }
 #projets #contprojetdesign #contboutonsuxui .boutonsuxui .realuxui {
-  background-color: #5BA4CC;
-  border-radius: 0.25rem;
-  border-style: solid;
-  border-color: #5BA4CC;
-  border-width: 2px;
-  width: 20%;
-  font-family: "Varela Round", sans-serif;
+  background-color: #FFE406;
+  border-radius: 5rem;
+  border-style: none;
+  transition: 0.5s;
+  font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1235,7 +1214,8 @@
 }
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
   #projets #contprojetdesign #contboutonsuxui .boutonsuxui .realuxui:hover {
-    background-color: white;
+    background-color: #3417E1;
+    color: white;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -1294,7 +1274,7 @@
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   font-size: 2rem;
-  color: #5BA4CC;
+  color: #3417E1;
 }
 @-webkit-keyframes tracking-in-expand-fwd {
   0% {
@@ -1331,7 +1311,7 @@
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: #5BA4CC;
+  color: #3417E1;
   font-weight: bold;
   font-size: 3rem;
   border-radius: 0 3px 3px 0;
@@ -1345,7 +1325,8 @@
   border-radius: 3px 0 0 3px;
 }
 #projets #contprojetdesign #contcarroussels .carroussels .prev:hover, #projets #contprojetdesign #contcarroussels .carroussels .next:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #FFE406;
+  border-radius: 3rem;
 }
 #projets #contprojetdesign #contcarroussels .carroussels .fade {
   -webkit-animation-name: fade;
@@ -1395,13 +1376,13 @@
   color: rgb(40, 39, 39);
   font-size: 1.5rem;
   text-align: center;
-  color: #5BA4CC;
+  color: #3417E1;
   margin-top: 1.5rem;
 }
 #projets #contprojetdesign #contcarroussels #photoshop .diapo .indice {
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
-  color: #5BA4CC;
+  color: #3417E1;
   font-size: 1rem;
   position: absolute;
   top: 0;
@@ -1412,13 +1393,13 @@
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #5BA4CC;
+  background-color: #3417E1;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 #projets #contprojetdesign #contcarroussels #photoshop .active, #projets #contprojetdesign #contcarroussels #photoshop .cercle:hover {
-  background-color: #028090;
+  background-color: #FFE406;
 }
 #projets #contprojetdesign #contcarroussels #illustrator .diapoillu {
   display: none;
@@ -1443,13 +1424,13 @@
   color: rgb(40, 39, 39);
   font-size: 1.5rem;
   text-align: center;
-  color: #5BA4CC;
+  color: #3417E1;
   margin-top: 1.5rem;
 }
 #projets #contprojetdesign #contcarroussels #illustrator .diapoillu .indice {
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
-  color: #5BA4CC;
+  color: #3417E1;
   font-size: 1rem;
   position: absolute;
   top: 0;
@@ -1460,20 +1441,20 @@
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #5BA4CC;
+  background-color: #3417E1;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 #projets #contprojetdesign #contcarroussels #illustrator .active, #projets #contprojetdesign #contcarroussels #illustrator .cercleillu:hover {
-  background-color: #028090;
+  background-color: #FFE406;
 }
 
 #contact h2 {
   font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   font-size: 2.5rem;
-  color: #5BA4CC;
+  color: #3417E1;
   text-align: center;
 }
 #contact form {
@@ -1501,9 +1482,7 @@
 #contact form #genre .radiobouton {
   width: 20px;
   height: 20px;
-}
-#contact form #genre .radiobouton :checked {
-  background-color: #5BA4CC !important;
+  accent-color: #3417E1 !important;
 }
 #contact form #genre .textebouton {
   font-family: "Varela Round", sans-serif;
@@ -1525,7 +1504,13 @@
 #contact form #identite .entreeidentite {
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
+  color: white;
   width: 25%;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-radius: 3rem;
+  border-color: #3417E1;
+  background-color: #3417E1;
 }
 @media only screen and (max-width: 760px) {
   #contact form #identite .entreeidentite {
@@ -1533,17 +1518,39 @@
     margin-top: 1rem;
   }
 }
+#contact form #identite input::-moz-placeholder {
+  color: white;
+}
+#contact form #identite input:-ms-input-placeholder {
+  color: white;
+}
+#contact form #identite input::placeholder {
+  color: white;
+}
 #contact form #message {
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
 #contact form #message #textemessage {
+  color: white !important;
+  border: none;
+  border-radius: 1rem;
+  background-color: #3417E1;
   resize: none;
   padding-top: 1rem;
   padding-bottom: 2rem;
   width: 100%;
   font-family: "Varela Round", sans-serif;
   color: rgb(40, 39, 39);
+}
+#contact form #message textarea::-moz-placeholder {
+  color: white;
+}
+#contact form #message textarea:-ms-input-placeholder {
+  color: white;
+}
+#contact form #message textarea::placeholder {
+  color: white;
 }
 #contact form #boutoncontact {
   display: flex;
@@ -1552,13 +1559,11 @@
   padding-bottom: 4rem;
 }
 #contact form #boutoncontact button {
-  background-color: #5BA4CC;
-  border-radius: 0.25rem;
-  border-style: solid;
-  border-color: #5BA4CC;
-  border-width: 2px;
-  width: 20%;
-  font-family: "Varela Round", sans-serif;
+  background-color: #FFE406;
+  border-radius: 5rem;
+  border-style: none;
+  transition: 0.5s;
+  font-family: "Phudu", cursive;
   color: rgb(40, 39, 39);
   width: 20%;
   height: 5rem;
@@ -1590,13 +1595,13 @@
 @media only screen and (min-width: 430px), only screen and (max-width: infinite) {
   #contact form #boutoncontact button:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: #3417E1;
+    color: white;
   }
 }
 
 footer {
-  background-image: url("images/blueback.jpg");
-  background-attachment: fixed;
+  background-color: #FFE406;
   display: flex;
   flex-direction: column;
 }
@@ -1621,6 +1626,9 @@ footer #footersup #presentationfooter h2 {
   color: rgb(40, 39, 39);
   font-size: 2.5rem;
   color: rgb(40, 39, 39);
+}
+footer #footersup #presentationfooter h2 em {
+  color: #3417E1;
 }
 @media only screen and (max-width: 760px) {
   footer #footersup #presentationfooter h2 {
@@ -1725,7 +1733,7 @@ footer #footersup #reseaux ul li {
 }
 footer #footersup #reseaux ul li a i {
   font-size: 5rem;
-  color: rgb(40, 39, 39);
+  color: #3417E1;
 }
 @media only screen and (max-width: 1024px) {
   footer #footersup #reseaux ul li a i {
@@ -1737,7 +1745,7 @@ footer hr {
   margin: auto;
   height: 5px;
   border-style: none;
-  background-color: white;
+  background-color: #3417E1;
 }
 footer span {
   padding-top: 2rem;

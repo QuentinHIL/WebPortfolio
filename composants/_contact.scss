@@ -22,9 +22,7 @@
             .radiobouton{
                 width: 20px;
                 height: 20px;
-                :checked{
-                    background-color: $prim !important;
-                }
+                accent-color: $prim !important;
             }
             .textebouton{
                 @include texte;
@@ -42,22 +40,38 @@
             }
             .entreeidentite{
                 @include texte;
+                color: white;
                 width: 25%;
+                border-style: solid;
+                border-width: 0.2rem;
+                border-radius: 3rem;
+                border-color: $prim;
+                background-color: $prim;
                 @media only screen and (max-width:760px){
                     width: 45%;
                     margin-top: 1rem;
                 }
+            }
+            input::placeholder{
+                color: white;
             }
         }
         #message{   
             padding-top: 1rem;
             padding-bottom: 2rem; 
             #textemessage{
+                color: white !important;
+                border: none;
+                border-radius: 1rem;
+                background-color: $prim;
                 resize: none;
                 padding-top: 1rem;
                 padding-bottom: 2rem;
                 width: 100%;
                 @include texte;
+            }
+            textarea::placeholder{
+                color: white;
             }
         }
         #boutoncontact{
@@ -67,7 +81,7 @@
             padding-bottom: 4rem;
             button{
                 @include stylebouton;
-                @include texte;
+                @include titre;
                 width: 20%;
                 height: 5rem;
                 font-size: 1.5rem;
@@ -90,8 +104,8 @@
             @media only screen and (min-width:430px), only screen and (max-width: infinite){
                 button:hover{
                     cursor: pointer;
-                    //@include pulse;
-                    background-color: white;
+                    background-color: $prim;
+                    color: white;
                 }      
             }
         }

@@ -81,7 +81,7 @@
                     }
                     button{
                         @include stylebouton;
-                        @include texte;
+                        @include titre;
                         width: 40%;
                         height: 3rem;
                         font-size: 1.25rem;
@@ -90,8 +90,8 @@
                     @media only screen and (min-width:430px), only screen and (max-width: infinite){
                         button:hover{
                             cursor: pointer;
-                            background-color: white;
-                            //@include pulse;
+                            background-color: $prim;
+                            color: white;
                         }      
                     }
                 }
@@ -162,7 +162,7 @@
                     }
                     button{
                         @include stylebouton;
-                        @include texte;
+                        @include titre;
                         width: 40%;
                         height: 3rem;
                         font-size: 1.25rem;
@@ -171,8 +171,8 @@
                     @media only screen and (min-width:430px), only screen and (max-width: infinite){
                         button:hover{
                             cursor: pointer;
-                            background-color: white;
-                            //@include pulse;
+                            background-color: $prim;
+                            color: white;
                         }      
                     }   
                 }
@@ -260,7 +260,7 @@
                     }
                     button{
                         @include stylebouton;
-                        @include texte;
+                        @include titre;
                         width: 40%;
                         height: 3rem;
                         font-size: 1.25rem;
@@ -269,8 +269,8 @@
                     @media only screen and (min-width:430px), only screen and (max-width: infinite){
                         button:hover{
                             cursor: pointer;
-                            background-color: white;
-                            //@include pulse;
+                            background-color: $prim;
+                            color: white;
                         }      
                     }
                 }
@@ -341,7 +341,7 @@
                     }
                     button{
                         @include stylebouton;
-                        @include texte;
+                        @include titre;
                         width: 40%;
                         height: 3rem;
                         font-size: 1.25rem;
@@ -350,8 +350,8 @@
                     @media only screen and (min-width:430px), only screen and (max-width: infinite){
                         button:hover{
                             cursor: pointer;
-                            background-color: white;
-                            //@include pulse;
+                            background-color: $prim;
+                            color: white;
                         }      
                     }   
                 }
@@ -395,14 +395,15 @@
                 }
                 .realuxui{
                     @include stylebouton;
-                    @include texte;
+                    @include titre;
                     margin-top: 2rem;
                     margin-bottom: 2rem;
                     font-size: 1.5rem;
                     height: 5rem;
                     @media only screen and (min-width:430px), only screen and (max-width: infinite){
                         &:hover{
-                            background-color: white;
+                            background-color: $prim;
+                            color: white;
                         }
                     }
                     @media only screen and (max-width:992px){
@@ -456,7 +457,8 @@
                   }
                 // effet de fond sur les boutons quand hover
                 .prev:hover, .next:hover {
-                     background-color: rgba(0, 0, 0, 0.6);
+                     background-color: $sec;
+                     border-radius: 3rem;
                 }
                 // animation fade
                 .fade {
@@ -521,7 +523,7 @@
                     transition: background-color 0.6s ease;    
                 }
                 .active, .cercle:hover {
-                    background-color: $primdeuxtest;
+                    background-color: $sec;
                   }
             }
             #illustrator{
@@ -572,7 +574,7 @@
                     transition: background-color 0.6s ease;    
                 }
                 .active, .cercleillu:hover {
-                    background-color: $primdeuxtest;
+                    background-color: $sec;
                   }
             }
         }

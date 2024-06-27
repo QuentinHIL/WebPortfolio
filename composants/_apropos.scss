@@ -44,9 +44,11 @@
                 button{
                     margin-top: 2rem;
                     @include stylebouton;
-                    @include texte;
+                    @include titre;
+                    color: $text;
                     height: 3rem;
                     font-size: 1.25rem;
+                    width: 70%;
                     @media only screen and (max-width:760px){
                         width: 50%;
                     }
@@ -55,7 +57,8 @@
                     button:hover{
                         cursor: pointer;
                         //@include pulse;
-                        background-color: white;
+                        background-color: $prim;
+                        color: white;
                     }     
                 }
             }
@@ -120,6 +123,8 @@
                     font-size: 1.5rem;
                     height: 5rem;
                     @include stylebouton;
+                    @include titre;
+                    width: 22%;
                     @media only screen and (max-width:768px){
                         width: 40%;
                         margin-top: 3rem;
@@ -131,7 +136,8 @@
                 .competence:hover{
                     cursor: pointer;
                     //@include pulse;
-                    background-color: white;
+                    background-color: $prim;
+                    color: white;
                 }
             }
         }
@@ -157,7 +163,7 @@
                             width: fit-content;
                             border-radius: 0.2rem;
                             text-align: center;
-                            background-color: $sectransparent;
+                            background-color: $sec;
                             margin-top: 1rem;
                         }
                     }

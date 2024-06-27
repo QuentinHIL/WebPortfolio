@@ -31,12 +31,10 @@
     color: $text;
 }
 @mixin stylebouton{
-  background-color: $prim;
-  border-radius: 0.25rem;
-  border-style: solid;
-  border-color: $prim;
-  border-width: 2px;
-  width: 20%;
+  background-color: $sec;
+  border-radius: 5rem;
+  border-style: none;
+  transition: 0.5s;
 }
 @mixin animin{
     -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
